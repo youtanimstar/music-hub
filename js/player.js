@@ -5,20 +5,52 @@ const music = new Audio('../music/test.mp3');
 
 let masterPlay = document.getElementById('masterPlay');
 let wave = document.getElementsByClassName('wave')[0];
-
+let condition = true;
 masterPlay.addEventListener('click',()=>{
     if (music.paused || music.currentTime <=0) {
         music.play();
         masterPlay.classList.remove('bi-play-fill');
         masterPlay.classList.add('bi-pause-fill');
         wave.classList.add('active2');
+        condition = false;
     } else {
         music.pause();
         masterPlay.classList.add('bi-play-fill');
         masterPlay.classList.remove('bi-pause-fill');
         wave.classList.remove('active2');
+        condition= true;
     }
 } )
+
+
+window.addEventListener('keydown', (event) => {
+    if (event.code === 'Space') {
+        if(condition)
+        {
+            music.play();
+        masterPlay.classList.remove('bi-play-fill');
+        masterPlay.classList.add('bi-pause-fill');
+        wave.classList.add('active2');
+        condition = false;
+        
+        }
+        else{
+            music.pause();
+            masterPlay.classList.add('bi-play-fill');
+            masterPlay.classList.remove('bi-pause-fill');
+            wave.classList.remove('active2');
+            condition= true;
+        }
+        event.preventDefault();
+    }
+    if (event.code === 'ArrowRight') {
+        music.currentTime = music.currentTime + 10;
+      }
+      if (event.code === 'ArrowLeft') {
+        music.currentTime = music.currentTime - 10;
+      }
+
+  });
 
 // play bar js
 
@@ -61,4 +93,5 @@ music.addEventListener('ended', ()=>{
     masterPlay.classList.add('bi-play-fill');
     masterPlay.classList.remove('bi-pause-fill');
     wave.classList.remove('active2');
+    condition= true;
 })

@@ -19,7 +19,7 @@
   background-color: var(--navbar);
   border-radius: 50px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   gap: 20px;
   border: 2px solid var(--white-gray);
