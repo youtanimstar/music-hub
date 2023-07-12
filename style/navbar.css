@@ -1,0 +1,124 @@
+/* ====================== navigation section ====================== */
+.navbar{
+  width: 100%;
+  height: 80px;
+  backdrop-filter: blur(10px);
+  background-color: var(--navbar);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  gap: 50px;
+  padding: 0px 30px;
+  z-index: 10;
+}
+/* ========= logo section ========= */
+
+.navbar .logo-seciton{
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.navbar .logo-seciton img{
+  height: 100px;
+  /* width: 50px; */
+}
+
+.navbar .logo-seciton h1{
+  color: var(--white);
+  text-transform: capitalize;
+}
+
+/* ========= nav elements ========= */
+
+/* routing section */
+
+
+.navbar ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar ul li{
+  width: fit-content;
+  height: fit-content;
+}
+.navbar ul li a{
+  padding: 7px 20px;
+  width: fit-content;
+  height: fit-content;
+  /* background-color: red; */
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.1s ease;
+}
+.navbar ul li a:hover{
+  background-color: var(--white);
+}
+.navbar ul li a:hover > .title{
+  color: var(--gray);
+}
+.navbar ul li a:hover{
+  
+}
+.navbar ul li a .title{
+  font-size: 20px;
+  color: var(--white);
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+
+.navbar ul li a .icon{
+  display: none;
+}
+
+/* user section */
+
+.navbar .user-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.navbar .user-section ul{
+  /* display: none; */
+}
+.navbar .user-section a{
+  border: 2.5px solid var(--white);
+  font-size: 20px;
+  color: var(--white);
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.navbar .user-section a:hover{
+  color: var(--gray);
+}
+/* profile section */
+
+.navbar .user-section .profile{
+  height: 55px;
+  width: 55px;
+  background-image: url("../images/profile.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 2px solid transparent;
+  display: none;
+}
+.navbar .user-section .profile:hover{
+  border: 2px solid var(--white);
+}

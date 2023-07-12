@@ -1,0 +1,336 @@
+/* ====================== home section ====================== */
+.home_section{
+    width: 1180px;
+    height: fit-content;
+    /* height: 200vh; */
+    /* background-color: var(--gray-white); */
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 0;
+    padding-bottom: 50px;
+}
+
+/* ====================== Latest Songs ====================== */
+
+.home_section .latest-songs{
+    width: 100%;
+    height: fit-content;
+    /* background-color: red; */
+    margin-top: 50px;
+}
+.home_section .latest-songs .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding: 0px 20px;
+}
+
+.home_section .latest-songs .top h1{
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.home_section .latest-songs .top .latest-songs-button-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.home_section .latest-songs .latest-songs-item{
+    width: 100%;
+    height: auto;
+    /* background-color: red; */
+    margin-top: 20px;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    overscroll-behavior-inline: contain;
+    gap: 20px;
+}
+.home_section .latest-songs .latest-songs-item::-webkit-scrollbar{
+    display: none;
+}
+.home_section .latest-songs .latest-songs-item li{
+    list-style-type: none;
+    position: relative;
+    min-width: 100%;
+    height: 500px;
+    background-color: red;
+    position: relative;
+    overflow-y: clip;
+}
+
+.home_section .latest-songs .latest-songs-item li .item-text-section{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    flex-direction: column;
+    padding: 30px;
+    height: 100%;
+    width: 80%;
+    /* background-color: blue; */
+    background-image: linear-gradient(to right, var(--gray), #1a191fd6,  #ffffff00);
+}
+.home_section .latest-songs .latest-songs-item li .item-text-section .item-title{
+    font-size: 40px;
+    text-align: left;
+    text-transform: capitalize;
+    color: var(--white);
+}
+
+.home_section .latest-songs .latest-songs-item li .item-text-section .item-description{
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--white);
+    width: 50%;
+}
+.home_section .latest-songs .latest-songs-item li .item-text-section .item-button{
+    padding: 7px 20px;
+  width: fit-content;
+  height: fit-content;
+  /* background-color: red; */
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2.5px solid var(--white);
+  font-size: 20px;
+  color: var(--white);
+  font-weight: 600;
+  letter-spacing: 2px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.1s ease;
+  
+}
+.home_section .latest-songs .latest-songs-item li .item-text-section .item-button:hover{
+    background-color: var(--white);
+    color: var(--gray);
+}
+
+.home_section .latest-songs .latest-songs-item li img{
+    /* height: 100%; */
+    width: 100%;
+}
+
+
+
+
+
+
+/* ========= profile artists ========= */
+
+
+.home_section .profile-artists{
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 50px;
+}
+
+/* top section */
+
+.home_section .profile-artists .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding: 0px 20px;
+}
+.home_section .profile-artists .top h1{
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.home_section .profile-artists .top .btn_s{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.fa-greater-than{
+    font-size: 12px;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    /* background-color: red; */
+    border: 2px solid var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    font-weight: 800;
+    transition: all 0.2s ease;
+    
+}
+.fa-greater-than:hover{
+    background-color: var(--white);
+    color: var(--gray);
+}
+
+.fa-less-than{
+    font-size: 12px;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    /* background-color: red; */
+    border: 2px solid var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    font-weight: 800;
+    transition: all 0.2s ease;
+    
+}
+.fa-less-than:hover{
+    background-color: var(--white);
+    color: var(--gray);
+}
+
+
+/* bottom section */
+
+.home_section .profile-artists .item{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    overscroll-behavior-inline: contain;
+    /* padding-left: 100px; */
+    /* background-color: red; */
+    /* cursor: grab; */
+}
+.snaps-inline {
+    scroll-snap-type: inline mandatory;
+    scroll-padding-inline: var(--_spacer, 1rem);
+  }
+  
+  .snaps-inline > * {
+    scroll-snap-align: start;
+  }
+.home_section .profile-artists .item::-webkit-scrollbar{
+    display: none;
+}
+
+.home_section .profile-artists .item li{
+    list-style-type: none;
+    position: relative;
+    min-width: 200px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-left: 20px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.home_section .profile-artists .item li:last-child{
+    margin-right: 20px;
+}
+.home_section .profile-artists .item li img{
+    /* height: 100px; */
+    width: 200px;
+}
+
+
+/* ========= songs section ========= */
+.home_section .songs{
+    width: 100%;
+    height: fit-content;
+    /* background-color: red; */
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.home_section .songs .title{
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.home_section .songs .song-card-section{
+    /* background-color: red; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.home_section .songs .song-card-section .song-card{
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    /* background-color: blue; */
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    border: 2px solid var(--white-gray);
+    cursor: pointer;
+    transition: all 0.1s linear;
+
+}
+.home_section .songs .song-card-section .song-card:hover{
+    background-color: var(--gray-white);
+}
+.home_section .songs .song-card-section .song-card .left{
+    width: 150px;
+    height: 100%;
+    border-radius: 10px;
+}
+.home_section .songs .song-card-section .song-card .right{
+    width: 75%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+.home_section .songs .song-card-section .song-card .right .title{
+    font-size: 25px;
+    font-weight: 600;
+}
+.home_section .songs .song-card-section .song-card .right .description{
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--white);
+    /* width: 50%; */
+    /* background-color: red; */
+}
+
+.home_section .songs .song-card-section .song-card .songs-button{
+    /* background-color: red; */
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    color: var(--whtie-inactive);
+    transition: all 0.1s linear;
+}
+.home_section .songs .song-card-section .song-card:hover > .songs-button{
+    color: var(--white);
+}

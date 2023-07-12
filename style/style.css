@@ -1,0 +1,32 @@
+/* ====================== google fonts ====================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+/* ====================== global declaration section ====================== */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --pink: #EE205E;
+    --gray: #1A191F;
+    --white: #fff;
+    --gray-white: #212129;
+    --navbar: #21212992;
+    --white-gray: #ffffff1f;
+    --whtie-inactive: #ffffff76;
+}
+
+/* ====================== main section ====================== */
+
+main{
+    position: relative;
+    background-color: var(--gray);
+}
