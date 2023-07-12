@@ -12,22 +12,29 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- ================ bootstrap icons ================ -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
     <!-- ================ style section ================ -->
     <!-- main style css -->
     <link rel="stylesheet" href="./style/style.css" />
     <!-- navbar css -->
     <link rel="stylesheet" href="./style/navbar.css" />
     <!-- home section -->
-    <link rel="stylesheet" href="./style/homesection.css">
+    <link rel="stylesheet" href="./style/homesection.css" />
     <!-- song section -->
-    <link rel="stylesheet" href="./style/song.css">
+    <link rel="stylesheet" href="./style/song.css" />
+    <!-- player section -->
+    <link rel="stylesheet" href="./style/player.css" />
   </head>
   <body>
     <main>
       <!-- Navigation Section -->
       <nav class="navbar">
         <div class="logo-seciton">
-          <img src="./images/logo.png" alt="logo">
+          <img src="./images/logo.png" alt="logo" />
           <h1>Music Hub</h1>
         </div>
         <ul>
@@ -59,91 +66,80 @@
             </li>
             <li><a href="#">Sign Up</a></li>
           </ul>
-          <div class="profile">
-
-          </div>
+          <div class="profile"></div>
         </div>
       </nav>
+      <!-- home section -->
       <div class="home_section">
         <div class="latest-songs">
           <div class="top">
             <h1>Latest Songs</h1>
             <div class="latest-songs-button-section">
-              
-              <i id="latest-songs-right-scrolls" class="fa-solid fa-less-than"></i>
-              <i id="latest-songs-left-scrolls" class="fa-solid fa-greater-than"></i>
+              <i
+                id="latest-songs-right-scrolls"
+                class="fa-solid fa-less-than"
+              ></i>
+              <i
+                id="latest-songs-left-scrolls"
+                class="fa-solid fa-greater-than"
+              ></i>
             </div>
           </div>
           <div class="latest-songs-item snaps-inline">
-             <li>
+            <li>
               <div class="item-text-section">
-                    <h2 class="item-title">
-                      Lorem, ipsum dolor.
-                    </h2>
-                    <p class="item-description">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, dignissimos.
-                    </p>
-                    <button class="item-button">
-                      listen now
-                    </button>
+                <h2 class="item-title">Lorem, ipsum dolor.</h2>
+                <p class="item-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Saepe, dignissimos.
+                </p>
+                <button class="item-button">listen now</button>
               </div>
-              <img src="./images/thumbnail.jpg" alt="singer profile pic">
+              <img src="./images/thumbnail.jpg" alt="singer profile pic" />
             </li>
             <li>
               <div class="item-text-section">
-                    <h2 class="item-title">
-                      Lorem, ipsum dolor.
-                    </h2>
-                    <p class="item-description">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, dignissimos.
-                    </p>
-                    <button class="item-button">
-                      listen now
-                    </button>
+                <h2 class="item-title">Lorem, ipsum dolor.</h2>
+                <p class="item-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Saepe, dignissimos.
+                </p>
+                <button class="item-button">listen now</button>
               </div>
-              <img src="./images/thumbnail.jpg" alt="singer profile pic">
+              <img src="./images/thumbnail.jpg" alt="singer profile pic" />
             </li>
             <li>
               <div class="item-text-section">
-                    <h2 class="item-title">
-                      Lorem, ipsum dolor.
-                    </h2>
-                    <p class="item-description">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, dignissimos.
-                    </p>
-                    <button class="item-button">
-                      listen now
-                    </button>
+                <h2 class="item-title">Lorem, ipsum dolor.</h2>
+                <p class="item-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Saepe, dignissimos.
+                </p>
+                <button class="item-button">listen now</button>
               </div>
-              <img src="./images/thumbnail.jpg" alt="singer profile pic">
+              <img src="./images/thumbnail.jpg" alt="singer profile pic" />
             </li>
             <li>
               <div class="item-text-section">
-                    <h2 class="item-title">
-                      Lorem, ipsum dolor.
-                    </h2>
-                    <p class="item-description">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, dignissimos.
-                    </p>
-                    <button class="item-button">
-                      listen now
-                    </button>
+                <h2 class="item-title">Lorem, ipsum dolor.</h2>
+                <p class="item-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Saepe, dignissimos.
+                </p>
+                <button class="item-button">listen now</button>
               </div>
-              <img src="./images/thumbnail.jpg" alt="singer profile pic">
+              <img src="./images/thumbnail.jpg" alt="singer profile pic" />
             </li>
             <li>
               <div class="item-text-section">
-                    <h2 class="item-title">
-                      Lorem, ipsum dolor.
-                    </h2>
-                    <p class="item-description">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, dignissimos.
-                    </p>
-                    <button class="item-button">
-                      listen now
-                    </button>
+                <h2 class="item-title">Lorem, ipsum dolor.</h2>
+                <p class="item-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Saepe, dignissimos.
+                </p>
+                <button class="item-button">listen now</button>
               </div>
-              <img src="./images/thumbnail.jpg" alt="singer profile pic">
+              <img src="./images/thumbnail.jpg" alt="singer profile pic" />
             </li>
           </div>
         </div>
@@ -151,47 +147,46 @@
           <div class="top">
             <h1>Popular Artists</h1>
             <div class="btn_s">
-              
               <i id="right-scrolls" class="fa-solid fa-less-than"></i>
               <i id="left-scrolls" class="fa-solid fa-greater-than"></i>
             </div>
           </div>
           <div class="item snaps-inline">
             <li>
-              <img src="./images/profile.jpg" alt="singer profile pic">
+              <img src="./images/profile.jpg" alt="singer profile pic" />
             </li>
             <li>
-              <img src="./images/profile.jpg" alt="singer profile pic">
+              <img src="./images/profile.jpg" alt="singer profile pic" />
             </li>
             <li>
-              <img src="./images/profile.jpg" alt="singer profile pic">
+              <img src="./images/profile.jpg" alt="singer profile pic" />
             </li>
             <li>
-              <img src="./images/profile.jpg" alt="singer profile pic">
+              <img src="./images/profile.jpg" alt="singer profile pic" />
             </li>
             <li>
-              <img src="./images/profile.jpg" alt="singer profile pic">
+              <img src="./images/profile.jpg" alt="singer profile pic" />
             </li>
             <li>
-              <img src="./images/profile.jpg" alt="singer profile pic">
+              <img src="./images/profile.jpg" alt="singer profile pic" />
             </li>
             <li>
-              <img src="./images/profile.jpg" alt="singer profile pic">
+              <img src="./images/profile.jpg" alt="singer profile pic" />
             </li>
             <li>
-              <img src="./images/profile.jpg" alt="singer profile pic">
+              <img src="./images/profile.jpg" alt="singer profile pic" />
             </li>
             <li>
-              <img src="./images/profile.jpg" alt="singer profile pic">
+              <img src="./images/profile.jpg" alt="singer profile pic" />
             </li>
             <li>
-              <img src="./images/profile.jpg" alt="singer profile pic">
+              <img src="./images/profile.jpg" alt="singer profile pic" />
             </li>
             <li>
-              <img src="./images/profile.jpg" alt="singer profile pic">
+              <img src="./images/profile.jpg" alt="singer profile pic" />
             </li>
             <li>
-              <img src="./images/profile.jpg" alt="singer profile pic">
+              <img src="./images/profile.jpg" alt="singer profile pic" />
             </li>
           </div>
         </div>
@@ -199,90 +194,113 @@
           <h1 class="title">Quick picks</h1>
           <div class="song-card-section">
             <div class="song-card">
-              <img src="./images/thumbnail.jpg" class="left" alt="">
+              <img src="./images/thumbnail.jpg" class="left" alt="" />
               <div class="right">
                 <div class="title">Lorem, ipsum dolor.</div>
                 <div class="description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, eligendi.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
+                  eligendi.
                 </div>
-                
               </div>
               <i class="fa-solid fa-play songs-button"></i>
             </div>
             <div class="song-card">
-              <img src="./images/thumbnail.jpg" class="left" alt="">
+              <img src="./images/thumbnail.jpg" class="left" alt="" />
               <div class="right">
                 <div class="title">Lorem, ipsum dolor.</div>
                 <div class="description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, eligendi.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
+                  eligendi.
                 </div>
-                
               </div>
               <i class="fa-solid fa-play songs-button"></i>
             </div>
             <div class="song-card">
-              <img src="./images/thumbnail.jpg" class="left" alt="">
+              <img src="./images/thumbnail.jpg" class="left" alt="" />
               <div class="right">
                 <div class="title">Lorem, ipsum dolor.</div>
                 <div class="description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, eligendi.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
+                  eligendi.
                 </div>
-                
               </div>
               <i class="fa-solid fa-play songs-button"></i>
             </div>
             <div class="song-card">
-              <img src="./images/thumbnail.jpg" class="left" alt="">
+              <img src="./images/thumbnail.jpg" class="left" alt="" />
               <div class="right">
                 <div class="title">Lorem, ipsum dolor.</div>
                 <div class="description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, eligendi.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
+                  eligendi.
                 </div>
-                
               </div>
               <i class="fa-solid fa-play songs-button"></i>
             </div>
             <div class="song-card">
-              <img src="./images/thumbnail.jpg" class="left" alt="">
+              <img src="./images/thumbnail.jpg" class="left" alt="" />
               <div class="right">
                 <div class="title">Lorem, ipsum dolor.</div>
                 <div class="description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, eligendi.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
+                  eligendi.
                 </div>
-                
               </div>
               <i class="fa-solid fa-play songs-button"></i>
             </div>
             <div class="song-card">
-              <img src="./images/thumbnail.jpg" class="left" alt="">
+              <img src="./images/thumbnail.jpg" class="left" alt="" />
               <div class="right">
                 <div class="title">Lorem, ipsum dolor.</div>
                 <div class="description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, eligendi.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
+                  eligendi.
                 </div>
-                
               </div>
               <i class="fa-solid fa-play songs-button"></i>
             </div>
             <div class="song-card">
-              <img src="./images/thumbnail.jpg" class="left" alt="">
+              <img src="./images/thumbnail.jpg" class="left" alt="" />
               <div class="right">
                 <div class="title">Lorem, ipsum dolor.</div>
                 <div class="description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, eligendi.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit,
+                  eligendi.
                 </div>
-                
               </div>
               <i class="fa-solid fa-play songs-button"></i>
             </div>
           </div>
         </div>
       </div>
-      
+      <!-- player section -->
+      <div class="player">
+        <div class="player-section">
+          <div class="wave">
+            <div class="wave1"></div>
+            <div class="wave1"></div>
+            <div class="wave1"></div>
+          </div>
+          <h1 class="title">Lorem, ipsum dolor</h1>
+          <div class="icon">
+            <i class="bi bi-skip-start-fill" id="back"></i>
+            <i class="bi bi-play-fill" id="masterPlay"></i>
+            <i class="bi bi-skip-end-fill" id="next"></i>
+          </div>
+          <span id="currentStart">0:00</span>
+          <div class="bar">
+            <input type="range" id="seek" min="0" value="0" max="100" />
+            <div class="bar2" id="bar2"></div>
+            <div class="dot"></div>
+          </div>
+          <span id="currentEnd">0:00</span>
+        </div>
+      </div>
     </main>
 
     <!-- scripts -->
     <script src="./js/profileartists.js"></script>
     <script src="./js/latestsongs.js"></script>
+    <script src="./js/player.js"></script>
   </body>
 </html>
