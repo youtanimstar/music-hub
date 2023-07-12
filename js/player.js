@@ -221,6 +221,7 @@ songCard.forEach((items, index) => {
       masterPlay.classList.add("bi-play-fill");
       masterPlay.classList.remove("bi-pause-fill");
       wave.classList.remove("active2");
+      
     });
   });
 });
@@ -232,7 +233,7 @@ back.addEventListener("click", () => {
 
   if (cardIndex < 0) {
     cardIndex = songs.length - 1;
-    music.src = `../music/${cardIndex+1}.mp3`;
+    music.src = `../music/${cardIndex + 1}.mp3`;
     console.log(cardIndex + 1);
     playerTitle.innerHTML = songs[cardIndex].songName;
     music.play();
@@ -260,7 +261,7 @@ next.addEventListener("click", () => {
   cardIndex = cardIndex + 1;
   if (cardIndex > songs.length - 1) {
     cardIndex = 0;
-    music.src = `../music/${cardIndex+1}.mp3`;
+    music.src = `../music/${cardIndex + 1}.mp3`;
     playerTitle.innerHTML = songs[cardIndex].songName;
     music.play();
     wave.classList.add("active2");
@@ -282,3 +283,32 @@ next.addEventListener("click", () => {
     });
   }
 });
+
+
+
+// auto play
+      // cardIndex = cardIndex + 1;
+      // if (cardIndex > songs.length - 1) {
+      //   cardIndex = 0;
+      //   music.src = `../music/${cardIndex + 1}.mp3`;
+      //   playerTitle.innerHTML = songs[cardIndex].songName;
+      //   music.play();
+      //   wave.classList.add("active2");
+      //   music.addEventListener("ended", () => {
+      //     masterPlay.classList.add("bi-play-fill");
+      //     masterPlay.classList.remove("bi-pause-fill");
+      //     wave.classList.remove("active2");
+      //   });
+      // } else {
+      //   music.src = `../music/${cardIndex + 1}.mp3`;
+      //   console.log(cardIndex + 1);
+      //   playerTitle.innerHTML = songs[cardIndex].songName;
+      //   music.play();
+      //   wave.classList.add("active2");
+      //   music.addEventListener("ended", () => {
+      //     masterPlay.classList.add("bi-play-fill");
+      //     masterPlay.classList.remove("bi-pause-fill");
+      //     wave.classList.remove("active2");
+      //   });
+      // }
+      // auto play
