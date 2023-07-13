@@ -23,7 +23,9 @@
     --white-gray: #ffffff1f;
     --whtie-inactive: #ffffff76;
 }
-
+body{
+    background-color: var(--gray);
+}
 /* ====================== main section ====================== */
 
 main{

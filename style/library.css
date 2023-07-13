@@ -1,0 +1,367 @@
+
+
+
+
+/* :root{
+    --pink: #EE205E;
+    --gray: #1A191F;
+    --white: #fff;
+    --gray-white: #212129;
+}
+*/
+
+/* body
+{
+    background-color: black;
+    opacity: 100%
+} */
+/*.nav
+{
+    width: 100%;
+    height: 64px;
+    display: flex;
+ position: relative;
+}
+.logo
+{
+   width: 100px;
+   height: 64px;
+   background-color: transparent;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+img
+{
+    position: absolute;
+}
+.option
+{
+    width: 33%;
+    height: 100%;
+    background-color: black;
+    margin-left: 26%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home
+{
+    width: 100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Roboto,Noto Naskh Arabic UI,Arial,sans-serif;
+ font-size: 20px;
+ font-weight: 700;
+}
+.buttonicon
+{
+    width: 10%;
+    height: 100%;
+    position: absolute;
+    color: #fff;
+    right: 0;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    font-weight: 200;
+    
+}
+.btn
+{
+    width: 33% ;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.subnav
+{
+    width: 100%;
+    height: 44px;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+ position: relative;
+}
+.option1
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height:100%;
+    margin-left: 60px;
+}
+.home1
+{
+    width: 76px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    border-radius: 50px;
+    background-color: rgba(255,255,255,0.1);
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+}
+.home1:hover
+{
+    background-color: white;
+    border-radius: 50px;
+    color: #1A191F;
+    cursor: pointer;
+}
+
+.dropbtn {
+     background-color: rgba(255,255,255,0.1);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+   
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    width: 164px;
+    border-radius: 50px;
+    height: 100%;
+    margin-left: 800px;
+  }
+  .dropdown a 
+  {
+    
+    background-color: rgba(255,255,255,0.1);
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;} */
+  
+  /* .show {display: block;} */
+  .container2
+  {
+    width: 1180px;
+    /* margin-top: 50px; */
+    height: fit-content;
+    gap: 10px;
+    /* min-height: 100vh; */
+    /* background-color: blue; */
+    /* padding-top: 50px; */
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.boxi
+{ 
+  /* width: 100%; */
+  /* width: fit-content; */
+   display: flex;
+   justify-content: center;
+   align-items: flex-start;
+   flex-wrap: wrap;
+   /* margin-left: 50px; */
+  /* background-color: red; */
+  gap: 30px;
+
+}
+.boxii
+{
+    width: 161px;
+    height: 161px;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 5px;
+   color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 30px;
+    
+}
+.boxiii
+{
+    width: 161;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    gap: 10px;
+    /* margin-left: 50px; */
+}
+.p1:hover
+{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: var(--navbar); 
+    z-index: 11;
+    backdrop-filter: blur(4px);
+  }
+  
+  .modal-content {
+    backdrop-filter: blur(10px);
+    background-color: var(--gray);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5.2px);
+-webkit-backdrop-filter: blur(5.2px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 560px;
+    height: fit-content;
+  }
+  
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .boxq
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  input
+  {
+    margin-top: 50px;
+    width: 500px;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    background-color: transparent;
+     outline: 0;
+     color: white;
+     font-size: 25px;
+  }
+  .fa-plus:hover
+  {
+    cursor: pointer;
+
+  }
+  .boxii
+  {
+    cursor: pointer;
+  }
+  .boxr
+  {
+    width: 100%;
+    margin-top: 50px;
+    height: 100px;
+    position: relative;
+    
+  }
+  .button1
+  {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border: 2.5px solid var(--white);
+    font-size: 20px;
+    color: var(--white);
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.1s ease;
+  }
+  .button1:hover{
+    color: var(--gray);
+    background-color: var(--white);
+  }
+
+  .boxl
+{
+    width: 161px;
+    height: 161px;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 5px;
+   color: white;
+   display: flex;
+   align-items: start;
+   justify-content: end;
+   font-size: 20px;
+   padding: 10px;
+   
+    
+}
+.boxv
+{
+    width: 161;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    gap: 10px;
+    /* margin-left: 50px; */
+}
+
+.boxs .fa-x
+{
+  padding: 2px;
+  cursor: pointer;
+}
+
+.fa-x{
+  font-size: 15px;
+  
+}
+  
+  
