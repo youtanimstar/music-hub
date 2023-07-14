@@ -246,7 +246,7 @@
 }
 .home_section .profile-artists .item li img{
     /* height: 100px; */
-    /* width: 200px; */
+    width: 200px;
     height: 100%;
 }
 

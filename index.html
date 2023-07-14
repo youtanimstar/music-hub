@@ -29,6 +29,8 @@
     <link rel="stylesheet" href="./style/song.css" />
     <!-- player section -->
     <link rel="stylesheet" href="./style/player.css" />
+    <!-- login signup sectin -->
+    <link rel="stylesheet" href="./style/login-signup.css">
   </head>
   <body>
     <main>
@@ -63,9 +65,8 @@
         <div class="user-section">
           <ul>
             <li>
-              <a href="#">Log In</a>
+              <a href="#" id="myBtn">Register</a>
             </li>
-            <li><a href="#">Sign Up</a></li>
           </ul>
           <div class="profile"></div>
         </div>
@@ -132,7 +133,33 @@
           <span id="currentEnd">0:00</span>
         </div>
       </div>
-      
+      <!-- login signup section -->
+      <div id="myModal" class="modal">
+        <form>
+        
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <input type="text" id="name" placeholder="Enter Your Github Username">
+            <br>
+<!--             
+            <input type="text" id="email" placeholder="Email">
+            <br>
+          
+            <input type="password" id="password" placeholder="Password" >
+            <br> -->
+           
+            <!--the remember me button-->
+            <!--the sign in button-->
+            <div class="form-element">
+                <button>Submit</button>
+            </div>
+            <!--forget password-->
+        
+          </div>
+        </form>
+        </div>
+        
     </main>
 
     <!-- scripts -->
@@ -140,6 +167,7 @@
     <script src="./js/latestsongs.js"></script>
     <script src="./js/data.js"></script>
     <script src="./js/player.js"></script>
+    <script src="./js/login-signup.js"></script>
    
   </body>
 </html>

@@ -29,5 +29,26 @@
     "image":"https://upload.wikimedia.org/wikipedia/en/5/56/Vaaste_song_cover.jpeg",
     "song": "../music/Vaaste.mp3",
     "poster": "https://i.ytimg.com/vi/FkGP700_Ffw/maxresdefault.jpg"
+  },
+  {
+    "title": "Cartoon - On & On",
+    "artist": {
+      "name": "Daniel Levi",
+      "image": "https://yt3.googleusercontent.com/x8kAl5jGZ8sH_P0ODFxSor05x_UkCfQNI_fjCREYKCWkuoWEZAbUg4QLkT-555XAGCAHXgkxdQ=s900-c-k-c0x00ffffff-no-rj"
+    },
+    "image":"https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/000/152/1000x0/on-on-feat-daniel-levi-1586947008-oeI24in2Ga.jpg",
+    "song": "../music/Cartoon-On-&-On.mp3",
+    "poster": "https://i.ytimg.com/vi/LinMiwSosfk/maxresdefault.jpg"
+  },
+  {
+    "title": "Agar Tum Sath Ho",
+    "artist": {
+      "name": "Alka Yagnik",
+      "image": "https://c.saavncdn.com/artists/Alka_Yagnik_002_20220314192930_500x500.jpg"
+    },
+    "image":"https://c.saavncdn.com/994/Tamasha-Hindi-2015-500x500.jpg",
+    "song": "../music/Agar-Tum-Sath-Ho.mp3",
+    "poster": "https://i.ytimg.com/vi/xRb8hxwN5zc/maxresdefault.jpg"
   }
+
 ]
