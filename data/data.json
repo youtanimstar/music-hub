@@ -1,93 +1,33 @@
+[
+  {
+    "title": "On My Way",
+    "artist": {
+      "name": "Alan Walker",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebbf753c009fd9c2d53351dd3c"
+    },
+    "image":"https://upload.wikimedia.org/wikipedia/en/a/af/Alan_Walker_-_On_My_Way.png",
+    "song": "../music/on-my-way.mp3",
+    "poster": "https://hi-static.z-dn.net/files/d38/c4937ea0a7d04823817a951db9799e99.jpg"
 
- [
-    {
-      "id": "1",
-      "songName": " On My Way",
-      "artist": "Alan Walker",
-      "poster": "../images/on_my_way.jpg"
+  },
+  {
+    "title": "Faded",
+    "artist": {
+      "name": "Alan Walker",
+      "image": "https://i.scdn.co/image/ab6761610000e5ebbf753c009fd9c2d53351dd3c"
     },
-    {
-      "id": "2",
-      "songName": "Alan Walker-Fade",
-      "artist": "Alan Walker",
-      "poster": "../images/Alan_Walker_Fade.jpg"
+    "image":"https://upload.wikimedia.org/wikipedia/en/d/da/Alan_Walker_-_Faded.png",
+    "song": "../music/faded.mp3",
+    "poster": "https://wallpapercave.com/wp/wp2446285.jpg"
+  },
+  {
+    "title": "Vaaste",
+    "artist": {
+      "name": "Dhvani Bhanushali",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/48/Dhvani_Bhanushali_at_the_launch_of_album_Leja_Re.jpg"
     },
-    {
-      "id": "3",
-      "songName": "Cartoon - On & On",
-      "artist": "Daniel Levi",
-      "poster": "../images/Cartoon_On_&_On.jpg"
-    },
-    {
-      "id": "4",
-      "songName": "Warriyo - Mortals",
-      "artist": "Mortals",
-      "poster": "../images/Warriyo_Mortals.jpg"
-    },
-    {
-      "id": "5",
-      "songName": "Ertugrul Gazi",
-      "artist": "Ertugru",
-      "poster": "../images/Ertugrul_Gazi.jpg"
-    },
-    {
-      "id": "6",
-      "songName": "Electronic Music",
-      "artist": "Electro",
-      "poster": "../images/Electronic_Music.jpg"
-    },
-    {
-      "id": "7",
-      "songName": "Agar Tum Sath Ho",
-      "artist": "Tamashaa",
-      "poster": "../images/Agar_Tum_Sath_Ho.jpg"
-    },
-    {
-      "id": "8",
-      songName: "Suna Hai",
-      artist: "Neha Kakker",
-      poster: "img/8.jpg",
-    },
-    {
-      id: "9",
-      songName: "Dilber",
-      artist: "Satyameva Jayate",
-      poster: "img/9.jpg",
-    },
-    {
-      id: "10",
-      songName: "Duniya",
-      artist: "Luka Chuppi",
-      poster: "img/10.jpg",
-    },
-    {
-      id: "11",
-      songName: "Lagdi Lahore Di",
-      artist: "Street Dancer 3D",
-      poster: "img/11.jpg",
-    },
-    {
-      id: "12",
-      songName: "Putt Jatt Da",
-      artist: "Putt Jatt Da",
-      poster: "img/12.jpg",
-    },
-    {
-      id: "13",
-      songName: "Baarishein",
-      artist: "Atif Aslam",
-      poster: "img/13.jpg",
-    },
-    {
-      id: "14",
-      songName: "Vaaste",
-      artist: "Dhvani Bhanushali",
-      poster: "img/14.jpg",
-    },
-    {
-      id: "15",
-      songName: "Lut Gaye",
-      artist: "Jubin Nautiyal",
-      poster: "img/15.jpg",
-    },
-  ];
+    "image":"https://upload.wikimedia.org/wikipedia/en/5/56/Vaaste_song_cover.jpeg",
+    "song": "../music/Vaaste.mp3",
+    "poster": "https://i.ytimg.com/vi/FkGP700_Ffw/maxresdefault.jpg"
+  }
+]

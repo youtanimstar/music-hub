@@ -1,112 +1,24 @@
-const music = new Audio("../music/test.mp3");
+const music = new Audio();
+fetch("../data/data.json")
+.then((response) => response.json())
+.then((data)=>{
 
-const songs = [
-  {
-    id: "1",
-    songName: " On My Way",
-    artist: "Alan Walker",
-    poster: "img/1.jpg",
-  },
-  {
-    id: "2",
-    songName: "Alan Walker-Fade",
-    artist: "Alan Walker",
-    poster: "img/2.jpg",
-  },
-  {
-    id: "3",
-    songName: "Cartoon - On & On",
-    artist: "Daniel Levi",
-    poster: "img/3.jpg",
-  },
-  {
-    id: "4",
-    songName: `Warriyo - Mortals`,
-    artist: "Mortals",
-    poster: "img/4.jpg",
-  },
-  {
-    id: "5",
-    songName: "Ertugrul Gazi",
-    artist: "Ertugru",
-    poster: "img/5.jpg",
-  },
-  {
-    id: "6",
-    songName: "Electronic Music",
-    artist: "Electro",
-    poster: "img/6.jpg",
-  },
-  {
-    id: "7",
-    songName: "Agar Tum Sath Ho",
-    artist: "Tamashaa",
-    poster: "img/7.jpg",
-  },
-  {
-    id: "8",
-    songName: "Suna Hai",
-    artist: "Neha Kakker",
-    poster: "img/8.jpg",
-  },
-  {
-    id: "9",
-    songName: "Dilber",
-    artist: "Satyameva Jayate",
-    poster: "img/9.jpg",
-  },
-  {
-    id: "10",
-    songName: "Duniya",
-    artist: "Luka Chuppi",
-    poster: "img/10.jpg",
-  },
-  {
-    id: "11",
-    songName: "Lagdi Lahore Di",
-    artist: "Street Dancer 3D",
-    poster: "img/11.jpg",
-  },
-  {
-    id: "12",
-    songName: "Putt Jatt Da",
-    artist: "Putt Jatt Da",
-    poster: "img/12.jpg",
-  },
-  {
-    id: "13",
-    songName: "Baarishein",
-    artist: "Atif Aslam",
-    poster: "img/13.jpg",
-  },
-  {
-    id: "14",
-    songName: "Vaaste",
-    artist: "Dhvani Bhanushali",
-    poster: "img/14.jpg",
-  },
-  {
-    id: "15",
-    songName: "Lut Gaye",
-    artist: "Jubin Nautiyal",
-    poster: "img/15.jpg",
-  },
-];
 
-let i;
+data.forEach((item, index)=>{
 
-for (i = 0; i < songs.length; i++) {
+
   let songCardHtml = document.createElement("div");
   songCardHtml.classList.add("song-card");
-  const htmlData = `<img src="../images/${songs[i].id}.jpg" class="left" alt="${songs[i].id}" />
+  songCardHtml.setAttribute("id",`${item.title}`)
+  const htmlData = `<img src="${item.image}" class="left" alt="${item.title}" />
     <div class="right">
-      <div class="title">${songs[i].songName}</div>
+      <div class="title">${item.title}</div>
       <div class="description">
-        ${songs[i].artist}
+        ${item.artist.name}
       </div>`;
   songCardHtml.insertAdjacentHTML("afterbegin", htmlData);
   document.querySelector(".song-card-section").append(songCardHtml);
-}
+})
 
 // master play and wave js
 
@@ -204,15 +116,13 @@ const songCard = document.querySelectorAll(".song-card");
 const songCardButtons = document.querySelectorAll(".songs-button");
 const player = document.querySelector(".player");
 const playerTitle = document.querySelector("#player-title");
-let cardIndex;
-songCard.forEach((items, index) => {
-  items.addEventListener("click", () => {
-    cardIndex = index;
-    console.log(cardIndex + 1);
-
-    playerTitle.innerHTML = songs[index].songName;
+let songIndex;
+songCard.forEach((item, index) => {
+  item.addEventListener("click", () => {
+    songIndex = index;
+    playerTitle.innerHTML = data[index].title;
     player.classList.add("active");
-    music.src = `../music/${index + 1}.mp3`;
+    music.src = `${data[index].song}`;
     music.play();
     masterPlay.classList.remove("bi-play-fill");
     masterPlay.classList.add("bi-pause-fill");
@@ -221,7 +131,8 @@ songCard.forEach((items, index) => {
       masterPlay.classList.add("bi-play-fill");
       masterPlay.classList.remove("bi-pause-fill");
       wave.classList.remove("active2");
-      
+      bar2.style.width = `0%`;
+  dot.style.left = `0%`;
     });
   });
 });
@@ -229,14 +140,15 @@ songCard.forEach((items, index) => {
 let back = document.getElementById("back");
 let next = document.getElementById("next");
 back.addEventListener("click", () => {
-  cardIndex = cardIndex - 1;
+  songIndex = songIndex - 1;
 
-  if (cardIndex < 0) {
-    cardIndex = songs.length - 1;
-    music.src = `../music/${cardIndex + 1}.mp3`;
-    console.log(cardIndex + 1);
-    playerTitle.innerHTML = songs[cardIndex].songName;
+  if (songIndex < 0) {
+    songIndex = songCard.length - 1;
+    music.src = `${data[songIndex].song}`;
+    playerTitle.innerHTML = data[songIndex].title;
     music.play();
+    masterPlay.classList.remove("bi-play-fill");
+    masterPlay.classList.add("bi-pause-fill");
     wave.classList.add("active2");
     music.addEventListener("ended", () => {
       masterPlay.classList.add("bi-play-fill");
@@ -244,10 +156,11 @@ back.addEventListener("click", () => {
       wave.classList.remove("active2");
     });
   } else {
-    music.src = `../music/${cardIndex + 1}.mp3`;
-    console.log(cardIndex + 1);
-    playerTitle.innerHTML = songs[cardIndex].songName;
+    music.src = `${data[songIndex].song}`;
+    playerTitle.innerHTML = data[songIndex].title;
     music.play();
+    masterPlay.classList.remove("bi-play-fill");
+    masterPlay.classList.add("bi-pause-fill");
     wave.classList.add("active2");
     music.addEventListener("ended", () => {
       masterPlay.classList.add("bi-play-fill");
@@ -258,12 +171,14 @@ back.addEventListener("click", () => {
 });
 
 next.addEventListener("click", () => {
-  cardIndex = cardIndex + 1;
-  if (cardIndex > songs.length - 1) {
-    cardIndex = 0;
-    music.src = `../music/${cardIndex + 1}.mp3`;
-    playerTitle.innerHTML = songs[cardIndex].songName;
+  songIndex = songIndex + 1;
+  if (songIndex >= songCard.length) {
+    songIndex = 0;
+    music.src = `${data[songIndex].song}`;
+    playerTitle.innerHTML = data[songIndex].title;
     music.play();
+    masterPlay.classList.remove("bi-play-fill");
+    masterPlay.classList.add("bi-pause-fill");
     wave.classList.add("active2");
     music.addEventListener("ended", () => {
       masterPlay.classList.add("bi-play-fill");
@@ -271,10 +186,11 @@ next.addEventListener("click", () => {
       wave.classList.remove("active2");
     });
   } else {
-    music.src = `../music/${cardIndex + 1}.mp3`;
-    console.log(cardIndex + 1);
-    playerTitle.innerHTML = songs[cardIndex].songName;
+    music.src = `${data[songIndex].song}`;
+    playerTitle.innerHTML = data[songIndex].title;
     music.play();
+    masterPlay.classList.remove("bi-play-fill");
+    masterPlay.classList.add("bi-pause-fill");
     wave.classList.add("active2");
     music.addEventListener("ended", () => {
       masterPlay.classList.add("bi-play-fill");
@@ -283,7 +199,7 @@ next.addEventListener("click", () => {
     });
   }
 });
-
+})
 
 
 // auto play
