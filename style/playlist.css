@@ -1,0 +1,208 @@
+
+
+/* ====================== Playlist Section ====================== */
+
+.playlist-section{
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+/* ========= Playlist Info Section ========= */
+
+.playlist-section .playlist{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.playlist-section .playlist .playlist-image{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+}
+.playlist-section .playlist .playlist-info{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+.playlist-section .playlist .playlist-info .playlist-tile{
+    font-size: 35px;
+    font-weight: 800;
+    text-transform: capitalize;
+    color: var(--white);
+}
+.playlist-section .playlist .playlist-info .playlist-subtitle{
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--white);
+}
+
+/* ========= Playlist button Section ========= */
+
+.playlist-section .playlist .playlist-info .playlist-button-section{
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.playlist-section .playlist .playlist-info .playlist-button-section .button{
+    background-color: var(--gray);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+    border: 2px solid var(--white);
+    color: var(--white);
+    font-weight: 700;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+.fa-shuffle,.fa-circle-play{
+    color: var(--white);
+}
+.playlist-section .playlist .playlist-info .playlist-button-section .button:hover{
+    color: var(--gray);
+    background-color: var(--white);
+}
+.playlist-section .playlist .playlist-info .playlist-button-section .button:hover > .fa-shuffle{
+    color: var(--gray);
+}
+.playlist-section .playlist .playlist-info .playlist-button-section .button:hover > .fa-circle-play{
+    color: var(--gray);
+}
+
+/* ========= playlist song list style ========= */
+.playlist-section .playlist-song-list{
+    /* background-color: red; */
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+}
+.playlist-section .song-list-title{
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--white);
+}
+.playlist-section .playlist-song-list .playlist-songs{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.playlist-section .song-card{
+    width: 900px;
+    height: 150px;
+    padding: 10px;
+    /* background-color: blue; */
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    border: 2px solid var(--white-gray);
+    cursor: pointer;
+    transition: all 0.1s linear;
+    /* padding-left: 10px; */
+    padding-right: 50px;
+
+}
+.playlist-section .song-card:hover{
+    background-color: var(--gray-white);
+}
+.playlist-section .song-card img{
+    height: 100%;
+    /* width: 50px; */
+    border-radius: 10px;
+}
+.playlist-section .song-card .right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: red; */
+    width: 100%;
+    height: 100%;
+}
+.playlist-section .song-card .right .card-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.playlist-section .song-card .right .right-info{
+    display: flex;
+    flex-direction: column;
+    /* background-color: blue; */
+    gap: 5px;
+}
+.playlist-section .song-card .right .right-info .title{
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.playlist-section  .song-card .right .right-info .description{
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--white);
+}
+.playlist-section .song-card .right .time{
+    color: var(--white);
+    letter-spacing: 2.5px;
+    font-weight: 500;
+}
+.playlist-section .song-card .right .button{
+    background-color: var(--gray);
+    padding: 5px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+    border: 2px solid var(--white);
+    color: var(--white);
+    font-weight: 700;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+.playlist-section .song-card .right .button:hover{
+    background-color: var(--white);
+    color: var(--gray);
+}
+
+.playlist-suggestion{
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+.playlist-suggestion .playlist-songs-suggestion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;  
+    flex-direction: column;
+}
+

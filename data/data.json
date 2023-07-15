@@ -7,7 +7,8 @@
     },
     "image":"https://i1.sndcdn.com/artworks-000523641915-lo2qzf-t500x500.jpg",
     "song": "../music/on-my-way.mp3",
-    "poster": "https://hi-static.z-dn.net/files/d38/c4937ea0a7d04823817a951db9799e99.jpg"
+    "poster": "https://hi-static.z-dn.net/files/d38/c4937ea0a7d04823817a951db9799e99.jpg",
+    "duration": "3:36"
 
   },
   {
@@ -18,7 +19,8 @@
     },
     "image":"https://upload.wikimedia.org/wikipedia/en/d/da/Alan_Walker_-_Faded.png",
     "song": "../music/faded.mp3",
-    "poster": "https://wallpapercave.com/wp/wp2446285.jpg"
+    "poster": "https://wallpapercave.com/wp/wp2446285.jpg",
+    "duration": "3:32"
   },
   {
     "title": "Vaaste",
@@ -28,7 +30,8 @@
     },
     "image":"https://upload.wikimedia.org/wikipedia/en/5/56/Vaaste_song_cover.jpeg",
     "song": "../music/Vaaste.mp3",
-    "poster": "https://i.ytimg.com/vi/FkGP700_Ffw/maxresdefault.jpg"
+    "poster": "https://i.ytimg.com/vi/FkGP700_Ffw/maxresdefault.jpg",
+    "duration": "3:16"
   },
   {
     "title": "Cartoon - On & On",
@@ -38,7 +41,8 @@
     },
     "image":"https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/000/152/1000x0/on-on-feat-daniel-levi-1586947008-oeI24in2Ga.jpg",
     "song": "../music/Cartoon-On-&-On.mp3",
-    "poster": "https://i.ytimg.com/vi/LinMiwSosfk/maxresdefault.jpg"
+    "poster": "https://i.ytimg.com/vi/LinMiwSosfk/maxresdefault.jpg",
+    "duration": "3:28"
   },
   {
     "title": "Agar Tum Sath Ho",
@@ -48,7 +52,8 @@
     },
     "image":"https://c.saavncdn.com/994/Tamasha-Hindi-2015-500x500.jpg",
     "song": "../music/Agar-Tum-Sath-Ho.mp3",
-    "poster": "https://i.ytimg.com/vi/xRb8hxwN5zc/maxresdefault.jpg"
+    "poster": "https://i.ytimg.com/vi/xRb8hxwN5zc/maxresdefault.jpg",
+    "duration": "5:41"
   }
 
 ]

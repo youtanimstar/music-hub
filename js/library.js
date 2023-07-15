@@ -15,7 +15,7 @@ const func1 = (text = '')=>{
     // const edittext = note.querySelector('.area1')
     const htmlData = `<div class="boxv">
     <div class="boxl" ><div class="boxs"><i class="fa-solid fa-x" id="cls1"></i></div></div>
-    <p class="p1" >${ihb.value}</p>
+    <p class="p1" ><a href="../dist/playlist.html" target="blank">${ihb.value}</a></p>
   </div>
 `
 

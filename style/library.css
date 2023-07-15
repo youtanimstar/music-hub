@@ -222,6 +222,9 @@ img
     gap: 10px;
     /* margin-left: 50px; */
 }
+.p1 a{
+  color: var(--white);
+}
 .p1:hover
 {
     text-decoration: underline;
