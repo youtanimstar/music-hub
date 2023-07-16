@@ -1,5 +1,6 @@
 const box = document.querySelector(".boxii");
 var modal = document.getElementById("myModal");
+const myBtn = document.querySelector('.myBtn');
 var span = document.getElementsByClassName("close")[0];
 let p1 = document.querySelector(".p1");
 let int1 = document.querySelector(".in1");
@@ -75,3 +76,7 @@ window.addEventListener("load", (e) => {
     }
   }
 });
+
+myBtn.addEventListener('click', ()=>{
+  document.querySelector('.modal').classList.toggle('active');
+})
