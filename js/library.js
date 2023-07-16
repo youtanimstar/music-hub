@@ -7,6 +7,7 @@ let j = "true";
 const ihb = document.querySelector("#imt");
 const modal1 = document.querySelector(".modal");
 const cls = document.querySelector(".cls");
+const playlistObject = {};
 const func1 = (id, value) => {
   const note = document.createElement("div");
   note.classList.add("boxiii");
@@ -55,8 +56,10 @@ btn1.addEventListener("click", () => {
   modal.style.display = "none";
   let temp1 = new Date();
   let temp2 = temp1.getTime();
+  playlistObject.title = ihb.value;
+  playlistObject.id = temp2;
   func1(temp2, ihb.value);
-  localStorage.setItem(temp2, ihb.value);
+  localStorage.setItem(temp2, JSON.stringify(playlistObject));
   ihb.value = "";
 });
 
@@ -67,7 +70,7 @@ window.addEventListener("load", (e) => {
     let value;
     if (Number(localStorage.key(i))) {
       key = localStorage.key(i);
-      value = localStorage.getItem(key);
+      value = JSON.parse(localStorage.getItem(key)).title;
       func1(key, value);
     }
   }
