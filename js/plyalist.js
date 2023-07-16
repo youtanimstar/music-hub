@@ -71,7 +71,20 @@ fetch("../data/data.json")
       
       
     });
-    // player section
-    let playlistSongs = document.querySelectorAll("playlistSong");
+
     
+    const playlistTitle = document.querySelector(".playlist-tile");
+
+    let playlistId = localStorage.getItem("currentPlaylist");
+
+    if(playlistId === "")
+    {
+      alert("No such Playlist exits");
+      window.close();
+      
+    }
+    playlistTitle.innerHTML  = localStorage.getItem(playlistId);
+
+
+
   });

@@ -12,7 +12,7 @@ const func1 = (id, value) => {
   note.classList.add("boxiii");
   const htmlData = `<div class="boxv">
     <div class="boxl" ><div class="boxs"><i class="fa-solid fa-x" id="${id}"></i></div></div>
-    <p class="p1" ><a href="../dist/playlist.html" target="blank">${value}</a></p>
+    <p class="p1" ><a href="../dist/playlist.html" target="blank" id="button${id}">${value}</a></p>
   </div>
 `;
 
@@ -21,13 +21,18 @@ const func1 = (id, value) => {
   } else {
     note.insertAdjacentHTML("afterbegin", htmlData);
     document.querySelector(".boxi").appendChild(note);
-    let temp1 = new Date();
-  let temp2 = temp1.getTime()
     note.querySelector(".boxs").addEventListener("click", () => {
       note.remove();
       localStorage.removeItem(id);
+      localStorage.setItem("currentPlaylist", "");
     });
   }
+
+  const button = document.getElementById(`button${id}`);
+
+  button.addEventListener("click", () => {
+    localStorage.setItem("currentPlaylist", id);
+  });
 };
 cls.addEventListener("click", () => {
   modal.style.display = "block";
@@ -49,21 +54,21 @@ const btn1 = document.querySelector(".button1");
 btn1.addEventListener("click", () => {
   modal.style.display = "none";
   let temp1 = new Date();
-  let temp2 = temp1.getTime()
+  let temp2 = temp1.getTime();
   func1(temp2, ihb.value);
-  localStorage.setItem(temp2,ihb.value);
+  localStorage.setItem(temp2, ihb.value);
   ihb.value = "";
 });
 
-window.addEventListener('load', (e)=>{
-  
+window.addEventListener("load", (e) => {
   let i;
-  for(i=0;i<localStorage.length;i++)
-  {
-    let key = localStorage.key(i);
-    let value = localStorage.getItem(key);
-    func1(key, value);
-    
+  for (i = 0; i < localStorage.length; i++) {
+    let key;
+    let value;
+    if (Number(localStorage.key(i))) {
+      key = localStorage.key(i);
+      value = localStorage.getItem(key);
+      func1(key, value);
+    }
   }
-  
-})
+});
