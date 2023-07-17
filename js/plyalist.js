@@ -19,22 +19,22 @@ fetch("../data/data.json")
 
     // adding the songs card to the suggestion section
     let i;
-    for (i = 0; i < 50; i++) {
+    for (i = 0; i < arr.length; i++) {
       let numArray = [];
       const songCard = document.createElement("div");
       songCard.classList.add("song-card");
       let num = getRandomArbitrary(0, arr.length);
-      numArray.push(num);
+      // numArray.push(num);
 
-      const htmlData = `<img src="${arr[num].image}" alt="${arr[num].title}" />
+      const htmlData = `<img src="${arr[i].image}" alt="${arr[i].title}" />
       <div class="right">
           <div class="right-info">
-            <div class="title">${arr[num].title}</div>
-            <div class="description">${arr[num].artist.name}</div>
+            <div class="title">${arr[i].title}</div>
+            <div class="description">${arr[i].artist.name}</div>
           </div>
           <div class="card-info">
-        <h2 class="time">${arr[num].duration}</h2>
-        <button class="button addButton" myId="${num}">Add</button></div>
+        <h2 class="time">${arr[i].duration}</h2>
+        <button class="button addButton" myId="${i}">Add</button></div>
       </div>`;
       songCard.insertAdjacentHTML("afterbegin", htmlData);
       document.querySelector(".playlist-songs-suggestion").append(songCard);
