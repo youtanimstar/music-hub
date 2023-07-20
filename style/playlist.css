@@ -170,6 +170,13 @@
     letter-spacing: 2.5px;
     font-weight: 500;
 }
+.playlist-section .song-card .right .button-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
 .playlist-section .song-card .right .button{
     background-color: var(--gray);
     padding: 5px 20px;

@@ -5,7 +5,8 @@ fetch("../data/data.json")
     data.forEach((item, index) => {
       arr.push(item);
     });
-
+    let playlistImage = document.querySelector(".playlist-image");
+    playlistImage.setAttribute("src", "https://community.spotify.com/t5/image/serverpage/image-id/25294i2836BD1C1A31BDF2?v=v2")
     let playlistId = localStorage.getItem("currentPlaylist");
 
     let playlistObject = {};
@@ -23,6 +24,8 @@ fetch("../data/data.json")
       let numArray = [];
       const songCard = document.createElement("div");
       songCard.classList.add("song-card");
+      songCard.setAttribute("cardId", `${i}`);
+      localStorage.setItem(`${i}`, `${arr[i].song}`);
       let num = getRandomArbitrary(0, arr.length);
       // numArray.push(num);
 
@@ -34,7 +37,10 @@ fetch("../data/data.json")
           </div>
           <div class="card-info">
         <h2 class="time">${arr[i].duration}</h2>
-        <button class="button addButton" myId="${i}">Add</button></div>
+        <div class="button-section">
+        <button class="button addButton" myId="${i}">Add</button>
+        <a href="../dist/player.html" target="_blank"> 
+        <button class="button playButton" myId="${i}">Play</button></div></a></div>
       </div>`;
       songCard.insertAdjacentHTML("afterbegin", htmlData);
       document.querySelector(".playlist-songs-suggestion").append(songCard);
@@ -63,7 +69,10 @@ fetch("../data/data.json")
               </div>
               <div class="card-info">
             <h2 class="time">${arr[id].duration}</h2>
-            <button class="button deleteButton " myId="${id}">Delete</button></div>
+            <div class="button-section">
+            <button class="button deleteButton " myId="${id}">Delete</button>
+            <a href="../dist/player.html" target="_blank"> 
+        <button class="button playButton2" myId="${id}">Play</button></div></a></div>
           </div>`;
         songCard.insertAdjacentHTML("afterbegin", htmlData);
         document.querySelector(".playlist-songs").prepend(songCard);
@@ -102,8 +111,26 @@ fetch("../data/data.json")
           numSongs = numSongs - 1;
           document.querySelector('.playlist-subtitle').innerHTML = `${numSongs} Songs`;
         });
+
+        const play2 = document.querySelectorAll(".playButton2")
+    play2.forEach((item, index)=>{
+      item.addEventListener('click', ()=>{
+        let id = item.getAttribute("myid");
+        localStorage.setItem('cardId', id);
+        console.log(id);
+        
       });
     });
+    playlistImage.setAttribute("src", arr[id].image);
+
+
+
+
+
+      });
+    });
+
+    
 
     const playlistTitle = document.querySelector(".playlist-tile");
 
@@ -115,28 +142,14 @@ fetch("../data/data.json")
       localStorage.getItem(playlistId)
     ).title;
 
-    // window.addEventListener("load", () => {
-    //     let i;
-    //   let num = JSON.parse(localStorage.getItem(playlistId)).cardInfo.length;
-    //   let cardObject = [];
-    //   cardObject = JSON.parse(localStorage.getItem(playlistId)).cardInfo;
-
-    //   for (i = 0; i < num; i++) {
-    //     const songCard = document.createElement("div");
-    //     songCard.classList.add("song-card");
-    //     const htmlData = `<img src="${cardObject[i].image}" alt="${cardObject[i].title}" />
-    //       <div class="right">
-    //           <div class="right-info">
-    //             <div class="title">${cardObject[i].title}</div>
-    //             <div class="description">${cardObject[i].name}</div>
-    //           </div>
-    //           <div class="card-info">
-    //         <h2 class="time">${cardObject[i].dur}</h2>
-    //         <button class="button deleteButton " myId="${cardObject[i].id2}">Delete</button></div>
-    //       </div>`;
-    //     songCard.insertAdjacentHTML("afterbegin", htmlData);
-    //     document.querySelector(".playlist-songs").prepend(songCard);
-    //   }
-      
-    // });
+    const play = document.querySelectorAll(".playButton")
+    play.forEach((item, index)=>{
+      item.addEventListener('click', ()=>{
+        let id = item.getAttribute("myid");
+        localStorage.setItem('cardId', id);
+        console.log(id);
+        
+      })
+    })
+    
   });

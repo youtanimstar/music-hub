@@ -1,0 +1,201 @@
+body{
+    /* z-index: -3; */
+}
+
+main{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* z-index: -2; */
+    background-color: transparent;
+}
+/* ========= background ========= */
+.background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    /* opacity: 0.5; */
+}
+
+/* ====================== Player section ====================== */
+.player-section
+{
+    width: 95%;
+    height: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: red; */
+    border-radius: 10px;
+    backdrop-filter: blur(15px) saturate(200%);
+    -webkit-backdrop-filter: blur(15px) saturate(200%);
+    background-color: rgba(17, 25, 40, 0.64);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.399);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    padding: 50px;
+    /* z-index: 1; */
+}
+/* ========= header section ========= */
+.player-section .header-section{
+    /* background-color: red; */
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 100px;
+}
+.player-section .header-section .image-section{
+    width: 250px;
+    border-radius: 10px;
+    border: 1px solid var(--white);
+}
+.player-section .header-section .text-section{
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+}
+.player-section .header-section .text-section .title{
+    color: var(--white);
+    font-size: 45px;
+    font-weight: 700;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+.player-section .header-section .text-section .artist{
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+/* ========= button section ========= */
+
+.player-section .player-button{
+    /* background-color: red; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    
+}
+.player-section .player-button i{
+    font-size: 40px;
+    color: var(--white);
+    cursor: pointer;
+}
+.player-section .player-button .fa-pause{
+    /* color: red; */
+    display: none;
+}
+.player-section .player-button .fa-play{
+    /* color: red; */
+    display: none;
+}
+.player-section .player-button .fa-pause.active{
+    display: block;
+}
+.player-section .player-button .fa-play.active{
+    display: block;
+}
+
+/* ========= range section ========= */
+
+.player-section .player-bar{
+    /* background-color: red; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.player-section .player-bar .range{
+    width: 80%;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+.player-section .player-bar .range:focus{
+    display: none;
+}
+.player-section .player-bar span{
+    color: var(--white);
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 5px;
+}
+
+
+/* input[type="range"]{
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    display: block;
+    width: 500px;
+    height: 8px;
+    background-color: #d5d5d5;
+    border-radius: 8px;
+    outline: none;
+}
+input[type="range"]::-webkit-slider-runnable-track{
+    -webkit-appearance: none;
+    height: 8px;
+}
+input[type="range"]::-moz-track{
+    -moz-appearance: none;
+    height: 8px;
+}
+input[type="range"]::-ms-track{
+    appearance: none;
+    height: 8px;
+}
+input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    background-color: #3264fe;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: -6px;
+    border: none;
+}
+input[type="range"]::-moz-range-thumb{
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    background-color: #3264fe;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: -6px;
+    border: none;
+}
+input[type="range"]::-ms-thumb{
+    appearance: none;
+    height: 20px;
+    width: 20px;
+    background-color: #3264fe;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: -6px;
+    border: none;
+}
+input[type="range"]:active::-webkit-slider-thumb{
+    background-color: #ffffff;
+    border: 3px solid #3264fe;
+}
+
+ */
