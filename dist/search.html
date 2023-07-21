@@ -5,10 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
     <title>Music Hub</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/navbar.css">
     <link rel="stylesheet" href="../style/search.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 <body>
+     <!-- Navigation Section -->
+     <nav class="navbar">
+        <div class="logo-seciton">
+          <img src="../images/logo.png" alt="logo" />
+          <h1>Music Hub</h1>
+        </div>
+        <ul>
+          <li>
+            <a href="../index.html">
+              <span class="icon"
+                ><i class="fa-solid fa-house-chimney"></i
+              ></span>
+              <span class="title">Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span class="icon"><i class="fa-solid fa-compass"></i></span>
+              <span class="title">Search</span>
+            </a>
+          </li>
+          <li>
+            <a href="./library.html">
+              <span class="icon"><i class="fa-solid fa-folder"></i></span>
+              <span class="title">Library</span>
+            </a>
+          </li>
+          <li>
+            <a href="./aboutus.html">
+              <span class="icon"><i class="fa-solid fa-folder"></i></span>
+              <span class="title">About Us</span>
+            </a>
+          </li>
+        </ul>
+        <div class="user-section">
+          <ul>
+            <li>
+              <a href="#" id="myBtn">Register</a>
+            </li>
+          </ul>
+          <div class="profile"></div>
+        </div>
+      </nav>
+
+
     <div class="nav">
         <div class="search">
             <input class="searchicon1" placeholder="Search your song" id="search">

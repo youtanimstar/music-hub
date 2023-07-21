@@ -1,0 +1,161 @@
+body{
+    position: relative;
+    background-color: transparent;
+    
+}
+#body
+{
+    height: 550vh;
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+}
+/* ====================== main section ====================== */
+
+main{
+    /* position: relative; */
+    background-color: var(--gray);
+}
+
+
+
+.container
+{
+  /* background-color: red; */
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+
+}
+.page1{
+  width: 100%;
+  height: fit-content;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  color: white;
+  /* padding-bottom: 50px ; */
+  padding-top: 50px;
+  
+}
+.page2{
+  width: 100%;
+  height: fit-content;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding-top: 100px;
+  flex-direction: row-reverse;
+  color: white;
+  /* font-size: 11px; */
+}
+.left{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+.left h1{
+  font-size: 50px;
+  text-transform: capitalize;
+  font-weight: 800;
+
+}
+.left p{
+  font-size: 28px;
+}
+
+
+.blob{
+    width: 250px;
+    height: 250px;
+    /* background-color: red; */
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+    animation: blobAnimation 10s infinite alternate;
+    background-image: url(../images/deep.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.blob2{
+  width: 250px;
+  height: 250px;
+  /* background-color: red; */
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+  animation: blobAnimation 10s infinite alternate;
+  background-image: url(../images/abhik.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.blob3{
+  width: 250px;
+  height: 250px;
+  /* background-color: red; */
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+  animation: blobAnimation 10s infinite alternate;
+  background-image: url(../images/debanshu.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.blob4{
+  width: 250px;
+  height: 250px;
+  /* background-color: red; */
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+  animation: blobAnimation 10s infinite alternate;
+  background-image: url(../images/arpan.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.blob5{
+  width: 250px;
+  height: 250px;
+  /* background-color: red; */
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+  animation: blobAnimation 10s infinite alternate;
+  background-image: url(../images/ankit2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+@keyframes blobAnimation {
+    0% {
+      border-radius: 46% 54% 62% 38% / 58% 46% 54% 42%;
+    }
+    25% {
+      border-radius: 57% 43% 38% 62% / 40% 31% 69% 60%;
+    }
+    50% {
+      border-radius: 57% 43% 22% 78% / 42% 55% 45% 58%;
+    }
+    75% {
+      border-radius: 42% 58% 48% 52% / 62% 33% 67% 38%;
+    }
+    100% {
+      border-radius: 71% 29% 48% 52% / 62% 33% 67% 38%;
+    }
+  }
+
+
+  .github{
+    color: var(--white);
+    font-size: 50px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  .github:hover{
+    transform: scale(1.1);
+  }

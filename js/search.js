@@ -8,91 +8,106 @@ const songs = [
     id: "1",
     songName: "On My Way",
     artist: "Alan Walker",
-    poster: "1.jpg",
+    poster: "../images/1.jpg",
+    duration: "4:10"
   },
   {
     id: "2",
     songName: "Alan Walker-Fade",
     artist: "Alan Walker",
-    poster: "2.jpg",
+    poster: "../images/2.jpg",
+    duration: "3:25"
   },
   {
     id: "3",
     songName: "Cartoon - On & On",
     artist: "Daniel Levi",
-    poster: "3.jpg",
+    poster: "../images/3.jpg",
+    duration: "5:20"
   },
   {
     id: "4",
     songName: `Warriyo - Mortals`,
     artist: "Mortals",
-    poster: "4.jpg",
+    poster: "../images/4.jpg",
+    duration: "5:25"
   },
   {
     id: "5",
     songName: "Ertugrul Gazi",
     artist: "Ertugru",
-    poster: "5.jpg",
+    poster: "../images/5.jpg",
+    duration: "3:10"
   },
   {
     id: "6",
     songName: "Electronic Music",
     artist: "Electro",
-    poster: "6.jpg",
+    poster: "../images/6.jpg",
+    duration: "4:05"
   },
   {
     id: "7",
     songName: "Agar Tum Sath Ho",
     artist: "Tamashaa",
-    poster: "7.jpg",
+    poster: "../images/7.jpg",
+    duration: "5:25"
   },
   {
     id: "8",
     songName: "Suna Hai",
     artist: "Neha Kakker",
-    poster: "8.jpg",
+    poster: "../images/8.jpg",
+    duration: "4:47"
   },
   {
     id: "9",
     songName: "Dilbar",
     artist: "Satyameva Jayate",
-    poster: "9.jpg",
+    poster: "../images/9.jpg",
+    duration: "4:20"
   },
   {
     id: "10",
     songName: "Duniya",
     artist: "Luka Chuppi",
-    poster: "10.jpg",
+    poster: "../images/10.jpg",
+    duration: "4:10"
   },
   {
     id: "11",
     songName: "Lagdi Lahore Di",
     artist: "Street Dancer 3D",
-    poster: "11.jpg",
+    poster: "../images/11.jpg",
+    duration: "5:40"
   },
   {
     id: "12",
     songName: "Putt Jatt Da",
     artist: "Putt Jatt Da",
-    poster: "12.jpg",
+    poster: "../images/12.jpg",
+    duration: "3:55"
   },
   {
     id: "13",
     songName: "Baarishein",
     artist: "Atif Aslam",
-    poster: "13.jpg",
+    poster: "../images/13.jpg",
+    duration: "2:52"
   },
   {
     id: "14",
     songName: "Vaaste",
     artist: "Dhvani Bhanushali",
-    poster: "14.jpg",
+    poster: "../images/14.jpg",
+    duration: "6:26"
   },
   {
     id: "15",
     songName: "Lut Gaye",
     artist: "Jubin Nautiyal",
-    poster: "15.jpg",
+    poster: "../images/15.jpg",
+    duration: "5:20"
   },
 ];
 let arr9 = []
@@ -112,14 +127,14 @@ const func1 = ()=>{
 var box0j = document.querySelector('.box0i')
 for (let i = 0; i < songs.length; ++i) {
   const htmlData = `<div class="boxii2">
-<div class="img"><img src="${songs[i].poster}" alt=""></div>
+<div class="img"><img src="${songs[i].poster}" class="image" alt=""></div>
 <div class="ptag">${songs[i].songName}</div>
 <div class="musicnametag">${songs[i].artist}</div>
 <div class="like">
 <div class="boxsub">
     <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
 </div>
-<div class="time">5:27</div>
+<div class="time">${songs[i].duration}</div>
 <div class="add">
 <div class="boxsub" id = 'camel${i}'>
     <i class="fa fa-music" aria-hidden="true" id = 'camel${i}'></i>
@@ -144,14 +159,14 @@ searchicon.addEventListener('input', () => {
     
     if ((ar == arr9[i])) {
        box4.innerHTML =  `<div class="boxii2">
-       <div class="img"><img src="${songs[i].poster}" alt=""></div>
+       <div class="img"><img src="${songs[i].poster}" class="image" alt=""></div>
        <div class="ptag">${songs[i].songName}</div>
        <div class="musicnametag">${songs[i].artist}</div>
        <div class="like">
        <div class="boxsub">
            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
        </div>
-       <div class="time">5:27</div>
+       <div class="time">${songs[i].duration}</div>
        <div class="add">
        <div class="boxsub" id = 'camel${i}'>
            <i class="fa fa-music" aria-hidden="true" id = 'camel${i}'></i>
@@ -193,14 +208,14 @@ searchicon.addEventListener('input', () => {
       const  note = document.createElement('div')
     note.classList.add(`text`);
        note.innerHTML =  `<div class="boxii2">
-       <div class="img"><img src="${songs[i].poster}" alt=""></div>
+       <div class="img"><img src="${songs[i].poster}" class="image" alt=""></div>
        <div class="ptag">${songs[i].songName}</div>
        <div class="musicnametag">${songs[i].artist}</div>
        <div class="like">
        <div class="boxsub">
            <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
        </div>
-       <div class="time">5:27</div>
+       <div class="time">${songs[i].duration}</div>
        <div class="add">
        <div class="boxsub" id = 'camel${i}'>
            <i class="fa fa-music" aria-hidden="true" id = 'camel${i}'></i>
