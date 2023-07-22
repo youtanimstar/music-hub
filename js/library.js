@@ -72,6 +72,8 @@ window.addEventListener("load", (e) => {
     if (Number(localStorage.key(i))) {
       key = localStorage.key(i);
       value = JSON.parse(localStorage.getItem(key)).title;
+      // console.log(localStorage.getItem(key));
+      
       func1(key, value);
     }
   }

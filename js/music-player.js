@@ -13,6 +13,10 @@ fetch("../data/data.json")
     music.src = `${data[index].song}`;
     const image = document.querySelector(".image-section");
     image.setAttribute("src", data[index].image);
+    const title = document.querySelector(".title");
+    title.innerHTML = data[index].title;
+    const artistName = document.querySelector(".artist");
+    artistName.innerHTML = data[index].artist.name;
     // music player
 
     let play = document.querySelector(".fa-play");
