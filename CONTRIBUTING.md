@@ -1,4 +1,5 @@
 # Hacktoberfest 2023 Contribution Guidelines
+<img src="./images/hf10_logo_wall_1920x1080.jpg">
 
 ## Welcome Contributors!
 
