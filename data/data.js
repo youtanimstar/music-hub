@@ -1,0 +1,118 @@
+const data = [
+  {
+    title: "On My Way",
+    artist: {
+      name: "Alan Walker",
+      image: "https://i.scdn.co/image/ab6761610000e5ebbf753c009fd9c2d53351dd3c",
+    },
+    image: "https://i1.sndcdn.com/artworks-000523641915-lo2qzf-t500x500.jpg",
+    song: "../music/on-my-way.mp3",
+    poster:
+      "https://hi-static.z-dn.net/files/d38/c4937ea0a7d04823817a951db9799e99.jpg",
+    duration: "3:36",
+  },
+  {
+    title: "Faded",
+    artist: {
+      name: "Alan Walker",
+      image: "https://i.scdn.co/image/ab6761610000e5ebbf753c009fd9c2d53351dd3c",
+    },
+    image:
+      "https://upload.wikimedia.org/wikipedia/en/d/da/Alan_Walker_-_Faded.png",
+    song: "../music/faded.mp3",
+    poster: "https://wallpapercave.com/wp/wp2446285.jpg",
+    duration: "3:32",
+  },
+  {
+    title: "Vaaste",
+    artist: {
+      name: "Dhvani Bhanushali",
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/4/48/Dhvani_Bhanushali_at_the_launch_of_album_Leja_Re.jpg",
+    },
+    image:
+      "https://upload.wikimedia.org/wikipedia/en/5/56/Vaaste_song_cover.jpeg",
+    song: "../music/Vaaste.mp3",
+    poster: "https://i.ytimg.com/vi/FkGP700_Ffw/maxresdefault.jpg",
+    duration: "3:16",
+  },
+  {
+    title: "Cartoon - On & On",
+    artist: {
+      name: "Daniel Levi",
+      image:
+        "https://yt3.googleusercontent.com/x8kAl5jGZ8sH_P0ODFxSor05x_UkCfQNI_fjCREYKCWkuoWEZAbUg4QLkT-555XAGCAHXgkxdQ=s900-c-k-c0x00ffffff-no-rj",
+    },
+    image:
+      "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/000/152/1000x0/on-on-feat-daniel-levi-1586947008-oeI24in2Ga.jpg",
+    song: "../music/Cartoon-On-&-On.mp3",
+    poster: "https://i.ytimg.com/vi/LinMiwSosfk/maxresdefault.jpg",
+    duration: "3:28",
+  },
+  {
+    title: "Agar Tum Sath Ho",
+    artist: {
+      name: "Alka Yagnik",
+      image:
+        "https://c.saavncdn.com/artists/Alka_Yagnik_002_20220314192930_500x500.jpg",
+    },
+    image: "https://c.saavncdn.com/994/Tamasha-Hindi-2015-500x500.jpg",
+    song: "../music/Agar-Tum-Sath-Ho.mp3",
+    poster: "https://i.ytimg.com/vi/xRb8hxwN5zc/maxresdefault.jpg",
+    duration: "5:41",
+  },
+  {
+    title: "Beauty and the Beast",
+    artist: {
+      name: "Ariana Grande",
+      image: "https://i.scdn.co/image/ab67616100005174cdce7620dc940db079bf4952",
+    },
+    image:
+      "https://pyxis.nymag.com/v1/imgs/742/81a/94f0539d8d0e64958fe7c3511300d0b53b-29-batb.rsquare.w330.jpg",
+    song: "../music/Beauty-and-the-Beast-_From-Beauty-and-the-BeastOfficial-Video_-_TubeRipper.com_.mp3",
+    poster:
+      "https://www.rtlnieuws.nl/sites/default/files/content/images/2017/03/29/beauty_and_the_beast_movie_4k_8k.jpg?itok=A0IAq7K0&width=2048&height=1152&impolicy=semi_dynamic",
+    duration: "4:00",
+  },
+  {
+    title: "Infinity",
+    artist: {
+      name: "Jaymes Young",
+      image: "https://i.scdn.co/image/ab6761610000e5eb87528aedec4b8d5586768014",
+    },
+    image:
+      "https://a10.gaanacdn.com/gn_img/albums/g4w3vwrWjJ/4w3v70poWj/size_l.jpg",
+    song: "../music/Jaymes Young - Infinity [Visualizer] [TubeRipper.com].mp3",
+    poster:
+      "https://upload.wikimedia.org/wikipedia/it/b/b3/Jaymes_Young_-_Infinity.png",
+    duration: "3:57",
+  },
+  {
+    title: "KDA POPSTARS",
+    artist: {
+      name: "Madison Beer",
+      image:
+        "https://media1.popsugar-assets.com/files/thumbor/O7Hm4gNYv3wgI30mNn4EK59Hd9I/0x107:2424x2531/fit-in/500x500/filters:format_auto-!!-:strip_icc-!!-/2020/07/13/813/n/44344577/f8181cf55f0ca8714fd435.27693412_/i/Madison-Beer.jpg",
+    },
+    image: "https://i1.sndcdn.com/artworks-000452779425-26dvo9-t500x500.jpg",
+    song: "../music/KDA-POPSTARS-_ft.-Madison-Beer-_G_I-DLE-Jaira-Burns_-Music-Video-League-of-Legends-_TubeRipper.com_.mp3",
+    poster:
+      "https://wallpapers.com/images/hd/lol-famous-kda-popstars-dxd2sbguucari5cd.jpg",
+    duration: "3:22",
+  },
+  {
+    title: "Kimi no Suizou wo Tabetai",
+    artist: {
+      name: "Sumika",
+      image:
+        "https://images.genius.com/6a66ba1b4b7e4166df3ff8c966125892.300x300x1.jpg",
+    },
+    image:
+      "https://i1.sndcdn.com/artworks-k0uXtVOOyaq0dI1U-hP9gJg-t500x500.jpg",
+    song: "../music/Kimi no Suizou wo Tabetai Fireworks Full Lyrics AMV Himitsu - Sumika [TubeRipper.com].mp3",
+    poster: "https://flxt.tmsimg.com/assets/p16689142_i_h10_aa.jpg",
+    duration: "4:28",
+  },
+];
+
+export { data };

@@ -1,6 +1,13 @@
+// ============================
+// TITLE : The library section
+// DESCRIPTION: In the library section we can create playlist and add any songs to the playlist
+// ============================
+
+// variable declaration section
+
 const box = document.querySelector(".boxii");
 var modal = document.getElementById("myModal");
-const myBtn = document.querySelector('.myBtn');
+const myBtn = document.querySelector(".myBtn");
 var span = document.getElementsByClassName("close")[0];
 let p1 = document.querySelector(".p1");
 let int1 = document.querySelector(".in1");
@@ -9,6 +16,9 @@ const ihb = document.querySelector("#imt");
 const modal1 = document.querySelector(".modal");
 const cls = document.querySelector(".cls");
 const playlistObject = {};
+
+// all fuctions
+
 const func1 = (id, value) => {
   const note = document.createElement("div");
   note.classList.add("boxiii");
@@ -73,12 +83,12 @@ window.addEventListener("load", (e) => {
       key = localStorage.key(i);
       value = JSON.parse(localStorage.getItem(key)).title;
       // console.log(localStorage.getItem(key));
-      
+
       func1(key, value);
     }
   }
 });
 
-myBtn.addEventListener('click', ()=>{
-  document.querySelector('.modal').classList.toggle('active');
-})
+myBtn.addEventListener("click", () => {
+  document.querySelector(".modal").classList.toggle("active");
+});

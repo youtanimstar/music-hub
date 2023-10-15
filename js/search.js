@@ -1,8 +1,12 @@
+// ============================
+// TITLE : The search section
+// DESCRIPTION: In this section we can search any song from the data
+// ============================
+
 const box3 = document.querySelector('.box3')
 const  note = document.createElement('div')
     note.classList.add(`text`);
 let arr2 = [0]
-// let note = []
 const songs = [
   {
     id: "1",
