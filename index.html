@@ -1,179 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
-    <title>Music Hub</title>
-    <!-- ================ cdn js ================ -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- ================ bootstrap icons ================ -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
-    />
-    <!-- ================ style section ================ -->
-    <!-- main style css -->
-    <link rel="stylesheet" href="./style/style.css" />
-    <!-- navbar css -->
-    <link rel="stylesheet" href="./style/navbar.css" />
-    <!-- home section -->
-    <link rel="stylesheet" href="./style/homesection.css" />
-    <!-- song section -->
-    <link rel="stylesheet" href="./style/song.css" />
-    <!-- player section -->
-    <link rel="stylesheet" href="./style/player.css" />
-    <!-- login signup sectin -->
-    <link rel="stylesheet" href="./style/login-signup.css">
-  </head>
-  <body>
-    <main>
-      <!-- Navigation Section -->
-      <nav class="navbar">
-        <div class="logo-seciton">
-          <img src="./images/logo.png" alt="logo" />
-          <h1>Music Hub</h1>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+  <title>Music Hub</title>
+  <!-- ================ cdn js ================ -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- ================ bootstrap icons ================ -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
+
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- ================ style section ================ -->
+  <!-- main style css -->
+  <link rel="stylesheet" href="./style/style.css" />
+  <!-- navbar css -->
+  <link rel="stylesheet" href="./style/navbar.css" />
+  <!-- home section -->
+  <link rel="stylesheet" href="./style/homesection.css" />
+  <!-- song section -->
+  <link rel="stylesheet" href="./style/song.css" />
+  <!-- player section -->
+  <link rel="stylesheet" href="./style/player.css" />
+  <!-- login signup sectin -->
+  <link rel="stylesheet" href="./style/login-signup.css">
+  <style>
+    @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+    section {
+      padding: 40px 0;
+    }
+
+    section .section-title {
+      text-align: center;
+      color: #D41A75;
+      margin-bottom: 50px;
+      text-transform: uppercase;
+    }
+
+    #footer {
+      background: #B22180 !important;
+    }
+
+    #footer h5 {
+      padding-left: 10px;
+      border-left: 3px solid #eeeeee;
+      padding-bottom: 2px;
+      margin-bottom: 20px;
+      color: #ffffff;
+    }
+
+    #footer a {
+      color: #ffffff;
+      text-decoration: none !important;
+      background-color: transparent;
+      -webkit-text-decoration-skip: objects;
+    }
+
+    #footer ul.social li {
+      padding: 3px 0;
+    }
+
+    #footer ul.social li a i {
+      margin-right: 5px;
+      font-size: 25px;
+      -webkit-transition: .5s all ease;
+      -moz-transition: .5s all ease;
+      transition: .5s all ease;
+    }
+
+    #footer ul.social li:hover a i {
+      font-size: 30px;
+      margin-top: -10px;
+    }
+
+    #footer ul.social li a,
+    #footer ul.quick-links li a {
+      color: #ffffff;
+    }
+
+    #footer ul.social li a:hover {
+      color: #eeeeee;
+    }
+
+    #footer ul.quick-links li {
+      padding: 3px 0;
+      -webkit-transition: .5s all ease;
+      -moz-transition: .5s all ease;
+      transition: .5s all ease;
+    }
+
+    #footer ul.quick-links li:hover {
+      padding: 3px 0;
+      margin-left: 5px;
+      font-weight: 700;
+    }
+
+    #footer ul.quick-links li a i {
+      margin-right: 5px;
+    }
+
+    #footer ul.quick-links li:hover a i {
+      font-weight: 700;
+    }
+
+    @media (max-width:767px) {
+      #footer h5 {
+        padding-left: 0;
+        border-left: transparent;
+        padding-bottom: 0px;
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <!-- Navigation Section -->
+    <nav class="navbar">
+      <div class="logo-seciton">
+        <img src="./images/logo.png" alt="logo" />
+        <h1>Music Hub</h1>
+      </div>
+      <ul>
+        <li>
+          <a href="">
+            <span class="icon"><i class="fa-solid fa-house-chimney"></i></span>
+            <span class="title">Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="./dist/search.html">
+            <span class="icon"><i class="fa-solid fa-compass"></i></span>
+            <span class="title">Search</span>
+          </a>
+        </li>
+        <li>
+          <a href="./dist/library.html">
+            <span class="icon"><i class="fa-solid fa-folder"></i></span>
+            <span class="title">Library</span>
+          </a>
+        </li>
+        <li>
+          <a href="./dist/aboutus.html">
+            <span class="icon"><i class="fa-solid fa-folder"></i></span>
+            <span class="title">About Us</span>
+          </a>
+        </li>
+      </ul>
+      <div class="user-section">
         <ul>
           <li>
-            <a href="">
-              <span class="icon"
-                ><i class="fa-solid fa-house-chimney"></i
-              ></span>
-              <span class="title">Home</span>
-            </a>
-          </li>
-          <li>
-            <a href="./dist/search.html">
-              <span class="icon"><i class="fa-solid fa-compass"></i></span>
-              <span class="title">Search</span>
-            </a>
-          </li>
-          <li>
-            <a href="./dist/library.html">
-              <span class="icon"><i class="fa-solid fa-folder"></i></span>
-              <span class="title">Library</span>
-            </a>
-          </li>
-          <li>
-            <a href="./dist/aboutus.html">
-              <span class="icon"><i class="fa-solid fa-folder"></i></span>
-              <span class="title">About Us</span>
-            </a>
+            <a href="#" id="myBtn">Register</a>
           </li>
         </ul>
-        <div class="user-section">
-          <ul>
-            <li>
-              <a href="#" id="myBtn">Register</a>
-            </li>
-          </ul>
-          <div class="profile"></div>
-        </div>
-      </nav>
-      <!-- home section -->
-      <div class="home_section">
-        <div class="latest-songs">
-          <div class="top">
-            <h1>Latest Song</h1>
-            <div class="latest-songs-button-section">
-              <i
-                id="latest-songs-right-scrolls"
-                class="fa-solid fa-less-than"
-              ></i>
-              <i
-                id="latest-songs-left-scrolls"
-                class="fa-solid fa-greater-than"
-              ></i>
-            </div>
-          </div>
-          <div class="latest-songs-item snaps-inline">
-            
-          </div>
-        </div>
-        <div class="profile-artists">
-          <div class="top">
-            <h1>Popular Artists</h1>
-            <div class="btn_s">
-              <i id="right-scrolls" class="fa-solid fa-less-than"></i>
-              <i id="left-scrolls" class="fa-solid fa-greater-than"></i>
-            </div>
-          </div>
-          <div class="item snaps-inline" id="popularArtist">
-            
-          </div>
-        </div>
-        <div class="songs">
-          <h1 class="title">Quick picks</h1>
-          <div class="song-card-section">
-            
-          </div>
-        </div>
+        <div class="profile"></div>
       </div>
-      <!-- player section -->
-      <div class="player">
-        <div class="player-section">
-          <div class="wave">
-            <div class="wave1"></div>
-            <div class="wave1"></div>
-            <div class="wave1"></div>
+    </nav>
+    <!-- home section -->
+    <div class="home_section">
+      <div class="latest-songs">
+        <div class="top">
+          <h1>Latest Song</h1>
+          <div class="latest-songs-button-section">
+            <i id="latest-songs-right-scrolls" class="fa-solid fa-less-than"></i>
+            <i id="latest-songs-left-scrolls" class="fa-solid fa-greater-than"></i>
           </div>
-          <h1 class="title" id="player-title">Lorem, ipsum dolor</h1>
-          <div class="icon">
-            <i class="bi bi-skip-start-fill" id="back"></i>
-            <i class="bi bi-play-fill" id="masterPlay"></i>
-            <i class="bi bi-skip-end-fill" id="next"></i>
-          </div>
-          <span id="currentStart">0:00</span>
-          <div class="bar">
-            <input type="range" id="seek" min="0" value="0" max="100" />
-            <div class="bar2" id="bar2"></div>
-            <div class="dot"></div>
-          </div>
-          <span id="currentEnd">0:00</span>
         </div>
-      </div>
-      <!-- login signup section -->
-      <div id="myModal" class="modal">
-        <form>
-        
-          <!-- Modal content -->
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <input type="text" id="name" placeholder="Enter Your Github Username">
-            <br>
-             
-            <input type="text" id="email" placeholder="Email">
-            <br>
-          
-            <input type="password" id="password" placeholder="Password" >
-            <br>
-           
-            <!--the remember me button-->
-            <!--the sign in button-->
-            <div class="form-element">
-                <button>Submit</button>
-            </div>
-            <!--forget password-->
-        
-          </div>
-        </form>
-        </div>
-        
-    </main>
+        <div class="latest-songs-item snaps-inline">
 
-    <!-- scripts -->
-    <script src="./js/profileartists.js" type="module"></script>
-    <script src="./js/latestsongs.js" type="module"></script>
-    <script src="./js/data.js" type="module"></script>
-    <script src="./js/player.js" type="module"></script>
-    <script src="./js/login-signup.js" type="module" ></script>
-   
-  </body>
+        </div>
+      </div>
+      <div class="profile-artists">
+        <div class="top">
+          <h1>Popular Artists</h1>
+          <div class="btn_s">
+            <i id="right-scrolls" class="fa-solid fa-less-than"></i>
+            <i id="left-scrolls" class="fa-solid fa-greater-than"></i>
+          </div>
+        </div>
+        <div class="item snaps-inline" id="popularArtist">
+
+        </div>
+      </div>
+      <div class="songs">
+        <h1 class="title">Quick picks</h1>
+        <div class="song-card-section">
+
+        </div>
+      </div>
+    </div>
+    <!-- player section -->
+    <div class="player">
+      <div class="player-section">
+        <div class="wave">
+          <div class="wave1"></div>
+          <div class="wave1"></div>
+          <div class="wave1"></div>
+        </div>
+        <h1 class="title" id="player-title">Lorem, ipsum dolor</h1>
+        <div class="icon">
+          <i class="bi bi-skip-start-fill" id="back"></i>
+          <i class="bi bi-play-fill" id="masterPlay"></i>
+          <i class="bi bi-skip-end-fill" id="next"></i>
+        </div>
+        <span id="currentStart">0:00</span>
+        <div class="bar">
+          <input type="range" id="seek" min="0" value="0" max="100" />
+          <div class="bar2" id="bar2"></div>
+          <div class="dot"></div>
+        </div>
+        <span id="currentEnd">0:00</span>
+      </div>
+    </div>
+    <!-- Footer -->
+    <section id="footer">
+      <div class="container">
+        <div class="row text-center text-xs-center text-sm-left text-md-left">
+          <div class="col-xs-12 col-sm-4 col-md-4">
+            <h5>Quick links</h5>
+            <ul class="list-unstyled quick-links">
+              <li><a href="./index.html"><i class="fa fa-angle-double-right"></i>Home</a></li>
+              <li><a href="./dist/aboutus.html"><i class="fa fa-angle-double-right"></i>About</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-4">
+            <h5>Quick links</h5>
+            <ul class="list-unstyled quick-links">
+              <li><a href="./dist/library.html"><i class="fa fa-angle-double-right"></i>Library</a></li>
+              <li><a href="./dist/search.html"><i class="fa fa-angle-double-right"></i>Search</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-4">
+            <h5>Quick links</h5>
+            <ul class="list-unstyled quick-links">
+              <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+              <li><a href="" title="Design and developed by"><i
+                    class="fa fa-angle-double-right"></i>*Insert Name*</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+            <ul class="list-unstyled list-inline social text-center">
+              <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
+              <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+              <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
+              <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
+              <li class="list-inline-item"><a href="javascript:void();" target="_blank"><i
+                    class="fa fa-envelope"></i></a></li>
+            </ul>
+          </div>
+          </hr>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+            <p class="h6">&copy All right Reversed.<a class="text-green ml-2"
+                target="_blank">*Insert name*</a></p>
+          </div>
+          </hr>
+        </div>
+      </div>
+    </section>
+    <!-- login signup section -->
+    <div id="myModal" class="modal">
+      <form>
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <input type="text" id="name" placeholder="Enter Your Github Username">
+          <br>
+
+          <input type="text" id="email" placeholder="Email">
+          <br>
+
+          <input type="password" id="password" placeholder="Password">
+          <br>
+
+          <!--the remember me button-->
+          <!--the sign in button-->
+          <div class="form-element">
+            <button>Submit</button>
+          </div>
+          <!--forget password-->
+
+        </div>
+      </form>
+
+    </div>
+
+  </main>
+
+  <!-- scripts -->
+  <script src="./js/profileartists.js" type="module"></script>
+  <script src="./js/latestsongs.js" type="module"></script>
+  <script src="./js/data.js" type="module"></script>
+  <script src="./js/player.js" type="module"></script>
+  <script src="./js/login-signup.js" type="module"></script>
+
+</body>
+
 </html>
