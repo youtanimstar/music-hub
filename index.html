@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
     <title>Music Hub</title>
     <!-- ================ cdn js ================ -->
     <link
@@ -30,7 +30,9 @@
     <!-- player section -->
     <link rel="stylesheet" href="./style/player.css" />
     <!-- login signup sectin -->
-    <link rel="stylesheet" href="./style/login-signup.css">
+    <link rel="stylesheet" href="./style/login-signup.css" />
+    <!-- footer css -->
+    <link rel="stylesheet" href="./style/footer.css" />
   </head>
   <body>
     <main>
@@ -93,9 +95,7 @@
               ></i>
             </div>
           </div>
-          <div class="latest-songs-item snaps-inline">
-            
-          </div>
+          <div class="latest-songs-item snaps-inline"></div>
         </div>
         <div class="profile-artists">
           <div class="top">
@@ -105,15 +105,11 @@
               <i id="left-scrolls" class="fa-solid fa-greater-than"></i>
             </div>
           </div>
-          <div class="item snaps-inline" id="popularArtist">
-            
-          </div>
+          <div class="item snaps-inline" id="popularArtist"></div>
         </div>
         <div class="songs">
           <h1 class="title">Quick picks</h1>
-          <div class="song-card-section">
-            
-          </div>
+          <div class="song-card-section"></div>
         </div>
       </div>
       <!-- player section -->
@@ -142,30 +138,65 @@
       <!-- login signup section -->
       <div id="myModal" class="modal">
         <form>
-        
           <!-- Modal content -->
           <div class="modal-content">
             <span class="close">&times;</span>
-            <input type="text" id="name" placeholder="Enter Your Github Username">
-            <br>
-             
-            <input type="text" id="email" placeholder="Email">
-            <br>
-          
-            <input type="password" id="password" placeholder="Password" >
-            <br>
-           
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter Your Github Username"
+            />
+            <br />
+
+            <input type="text" id="email" placeholder="Email" />
+            <br />
+
+            <input type="password" id="password" placeholder="Password" />
+            <br />
+
             <!--the remember me button-->
             <!--the sign in button-->
             <div class="form-element">
-                <button>Submit</button>
+              <button>Submit</button>
             </div>
             <!--forget password-->
-        
           </div>
         </form>
+      </div>
+
+      <footer>
+        <div>
+          <div class="footer-logo">
+            <img src="./images/logo.png" alt="Music Hub" />
+            <p>Music Hub</p>
+          </div>
+          <div class="quick-links">
+            <h3>Quick Links</h3>
+            <a href="#home_section">Home</a>
+            <a href="dist/library.html">Library</a>
+            <a href="dist/aboutus.html">About Us</a>
+          </div>
+          <div class="quick-links">
+            <h3>Quick Links</h3>
+            <a href="dist/search.html">Search</a>
+            <a href="dist/playlist.html">Playlist</a>
+          </div>
+          <div class="quick-links">
+            <h3>Quick Links</h3>
+            <a href="dist/player.html">Player</a>
+            <a href="#">Register</a>
+          </div>
+          <div class="social-links">
+            <h3>Social Links</h3>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+          </div>
         </div>
-        
+        <div>
+          <p>CopyRights &copy; 2023. All Rights Reserved</p>
+        </div>
+      </footer>
     </main>
 
     <!-- scripts -->
@@ -173,7 +204,6 @@
     <script src="./js/latestsongs.js" type="module"></script>
     <script src="./js/data.js" type="module"></script>
     <script src="./js/player.js" type="module"></script>
-    <script src="./js/login-signup.js" type="module" ></script>
-   
+    <script src="./js/login-signup.js" type="module"></script>
   </body>
 </html>

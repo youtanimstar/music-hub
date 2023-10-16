@@ -4,31 +4,33 @@
 
 /* ====================== global declaration section ====================== */
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-    font-family: "Poppins", sans-serif;
-    scroll-behavior: smooth;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
-:root{
-    --pink: #EE205E;
-    --gray: #1A191F;
-    --white: #fff;
-    --gray-white: #212129;
-    --navbar: #21212992;
-    --white-gray: #ffffff1f;
-    --whtie-inactive: #ffffff76;
+:root {
+  --pink: #ee205e;
+  --gray: #1a191f;
+  --white: #fff;
+  --gray-white: #212129;
+  --navbar: #21212992;
+  --white-gray: #ffffff1f;
+  --whtie-inactive: #ffffff76;
+  --footer: #c70841;
+  --footer-white: #dbdbe2;
 }
-body{
-    background-color: var(--gray);
+body {
+  background-color: var(--gray);
 }
 /* ====================== main section ====================== */
 
-main{
-    position: relative;
-    background-color: var(--gray);
+main {
+  position: relative;
+  background-color: var(--gray);
 }
