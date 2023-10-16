@@ -83,17 +83,49 @@ git push origin branch-name
 
 
 
-## Project Admin
+## Project Members
 
 <table>
 	<tr>
 		<td align="center">
 			<a href="https://github.com/youtanimstar">
-				<img src="./images/deep.jpg" width="100px" alt="" />
+				<img src="./images/deep.jpg" width="100px" alt="" style="border-radius: 50%"/>
 				<br /> <sub><b>Deep Das</b></sub>
 			</a>
 			<br /> <a href="https://github.com/youtanimstar"> 
 		👑 Admin
+	    </a>
+		</td>
+		<td align="center">
+			<a href="https://github.com/myname-abhik">
+				<img src="./images/abhik.jpeg" width="100px" alt="" style="border-radius: 50%"/>
+				<br /> <sub><b>Abhik Chakrabortty</b></sub>
+			</a>
+			<br /> <a href="https://github.com/myname-abhik">
+	    </a>
+		</td>
+		<td align="center">
+			<a href="https://github.com/Debakun">
+				<img src="./images/debanshu.jpeg" width="100px" height="100px" alt="" style="border-radius: 50%"/>
+				<br /> <sub><b>Debangsu Chakraborty</b></sub>
+			</a>
+			<br /> <a href="https://github.com/Debakun"> 
+	    </a>
+		</td>
+		<td align="center">
+			<a href="https://github.com/Arpan-Maity01">
+				<img src="./images/arpan.jpeg" width="100px" alt="" style="border-radius: 50%"/>
+				<br /> <sub><b>Arpan Maity</b></sub>
+			</a>
+			<br /> <a href="https://github.com/Arpan-Maity01"> 
+	    </a>
+		</td>
+		<td align="center">
+			<a href="https://github.com/Ankit-Koder">
+				<img src="./images/ankit2.jpg" width="100px" alt="" style="border-radius: 50%"/>
+				<br /> <sub><b>Ankit Kundu</b></sub>
+			</a>
+			<br /> <a href="https://github.com/Ankit-Koder"> 
 	    </a>
 		</td>
 	</tr>
