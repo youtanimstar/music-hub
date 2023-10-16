@@ -50,12 +50,12 @@ The tech stack required to contribute to this project includes:
 ```
 git clone https://github.com/youtanimstar/music-hub.git
 ```
-- Create a branch
+- Create a branch.
 ```
 git checkout -b branch-name
 ```
-- Make your changes 
-- Commit and push
+- Make your changes.
+- Commit and push.
 ```
 git add .
 git commit -m 'Commit message'
