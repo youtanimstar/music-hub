@@ -11,6 +11,8 @@
 2. [Tech Stack](#tech-stack)
 3. [Getting Started](#getting-started)
 4. [Contribution Guidelines](#contribution-guidelines)
+4. [Project Admin](#project-admin)
+4. [Contributors](#contributors)
 5. [Happy Hacking!](#happy-hacking)
 
 ## Introduction to Hacktoberfest
@@ -26,6 +28,7 @@ Whether you're a seasoned developer or just starting out, Hacktoberfest welcomes
 <img src="./images/Music Hub.png" style="width: 100%">
 
 Welcome to Music Hub, the perfect platform for beginners and music enthusiasts to discover, listen to, and enjoy a wide range of music. Whether you're a budding music lover or an aspiring musician, Music Hub provides an easy and intuitive way to explore the world of music.
+[See the website](https://music-hub-10.netlify.app/).
 
 ## Tech Stack
 
@@ -59,7 +62,7 @@ git commit -m 'Commit message'
 git push origin branch-name
 ```
 - Create a new pull request from your forked repository (Click the New Pull Request button located at the top of your repo)
-- Wait for your PR review and merge approval. [See the website](https://hostingers.netlify.app/).
+- Wait for your PR review and merge approval. [See the website](https://music-hub-10.netlify.app/).
 
 
 ## Contribution Guidelines
@@ -78,11 +81,9 @@ git push origin branch-name
 
 - Have patience and open communication during the review process.
 
-## Happy Hacking!
 
-Thank you for being a part of Hacktoberfest 2023! Your contributions are essential in making the open source ecosystem vibrant and thriving. Happy hacking, and let's make this Hacktoberfest an amazing experience for everyone! 🚀
 
-## ❤️ Project Admin
+## Project Admin
 
 <table>
 	<tr>
@@ -104,6 +105,9 @@ Thank you for being a part of Hacktoberfest 2023! Your contributions are essenti
   <img src="https://contrib.rocks/image?repo=youtanimstar/music-hub" />
 </a>
 
+## Happy Hacking!
+
+Thank you for being a part of Hacktoberfest 2023! Your contributions are essential in making the open source ecosystem vibrant and thriving. Happy hacking, and let's make this Hacktoberfest an amazing experience for everyone! 🚀
 
 <div align="center">
 <img src="https://media4.giphy.com/media/styFB7hZx7PBc4NlHN/giphy.gif?cid=ecf05e475m8qniyylsf5tisfhb7bbxdoxm7qhwrnzihceiqo&ep=v1_stickers_search&rid=giphy.gif&ct=ts" style="width: 200px;height: 200px;">
