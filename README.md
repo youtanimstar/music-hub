@@ -106,7 +106,7 @@ git push origin branch-name
 		</td>
 		<td align="center">
 			<a href="https://github.com/Debakun">
-				<img src="./images/debanshu.jpeg" width="100px" alt="" style="border-radius: 50%"/>
+				<img src="./images/debanshu.jpeg" width="100px" height="100px" alt="" style="border-radius: 50%"/>
 				<br /> <sub><b>Debangsu Chakraborty</b></sub>
 			</a>
 			<br /> <a href="https://github.com/Debakun"> 
