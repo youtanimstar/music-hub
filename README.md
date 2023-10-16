@@ -6,7 +6,7 @@
 
 ## Table of Contents
 
-1. [Introduction to Hacktoberfest](#introduction)
+1. [Introduction to Hacktoberfest](#introduction-to-hacktoberfest)
 1. [Our project](#music-hub)
 2. [Tech Stack](#tech-stack)
 3. [Getting Started](#getting-started)
