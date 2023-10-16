@@ -1,6 +1,6 @@
 // ============================
 // TITLE : The library section
-// DESCRIPTION: In the library section we can create playlist and add any songs to the playlist..
+// DESCRIPTION: In the library section we can create playlist and add any songs to the playlist...
 // ============================
 
 // variable declaration section
