@@ -66,10 +66,17 @@ if (JSON.parse(localStorage.getItem(playlistId)).cardInfo != undefined) {
   ).cardInfo;
   numSongs += playlistObject.cardInfo.length;
   document.querySelector(".playlist-subtitle").innerHTML = `${numSongs} Songs`;
-  playlistImage.setAttribute("src", arr[playlistObject.cardInfo[numSongs-1].id2].image);
-  playlistObject.cardInfo.forEach(item => {
-      let id = item.id2;
-      const htmlData = `<img src="${arr[id].image}" alt="${arr[id].title}" />
+  displayPlaylistTracks();
+}
+
+function displayPlaylistTracks() {
+  playlistImage.setAttribute(
+    "src",
+    arr[playlistObject.cardInfo[numSongs - 1].id2].image
+  );
+  playlistObject.cardInfo.forEach((item) => {
+    let id = item.id2;
+    const htmlData = `<img src="${arr[id].image}" alt="${arr[id].title}" />
       <div class="right">
           <div class="right-info">
             <div class="title">${arr[id].title}</div>
@@ -100,10 +107,9 @@ if (JSON.parse(localStorage.getItem(playlistId)).cardInfo != undefined) {
       item.addEventListener("click", () => {
         let id = item.getAttribute("myid");
         localStorage.setItem("cardId", id);
-        console.log(id);
       });
     });
-  })
+  });
 }
 
 addCard.forEach((item, index) => {
@@ -165,7 +171,6 @@ addCard.forEach((item, index) => {
       item.addEventListener("click", () => {
         let id = item.getAttribute("myid");
         localStorage.setItem("cardId", id);
-        console.log(id);
       });
     });
     playlistImage.setAttribute("src", arr[id].image);
@@ -197,3 +202,9 @@ function playQueue() {
   newTab.focus();
 }
 document.querySelector(".play-queue-btn").addEventListener("click", playQueue);
+
+function shuffleQueue() {
+  playlistObject.cardInfo.sort(() => (Math.random() > 0.5 ? 1 : -1));
+  displayPlaylistTracks();
+}
+document.querySelector(".shuffle-btn").addEventListener("click", shuffleQueue);
