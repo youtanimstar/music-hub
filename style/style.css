@@ -34,3 +34,20 @@ main {
   position: relative;
   background-color: var(--gray);
 }
+
+
+/*Cutom scrolbar*/
+
+::-webkit-scrollbar {
+  width: 12px; 
+}
+
+::-webkit-scrollbar-track {
+  background: #2d2e2d; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#b52080, #e11972, #ef335f, #f2524d, #f27b26); 
+  border-radius: 10px;
+}
+
