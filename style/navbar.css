@@ -122,3 +122,8 @@
 .navbar .user-section .profile:hover{
   border: 2px solid var(--white);
 }
+
+
+.user-section{
+  display: none;
+}

@@ -90,7 +90,6 @@
   #name,#email,#password
   {
       width:100%;
-     
       margin-top: 5px;
       display: block;
       width: 100%;
@@ -100,6 +99,23 @@
       border-radius: 5px;
       background-color: var(--gray);
       color: var(--white);
-      font-size: 20px;
-      
+      font-size: 20px;  
   }
+
+  .user-section ul {
+    display: flex;
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove default list padding */
+  }
+  
+  .user-section li {
+    display: flex; /* Make the list items flex containers */
+  }
+  
+  .user-section a {
+    margin-right: 10px; /* Add margin to separate the buttons */
+  }
+  
+  /* Styling for buttons (optional) */
+
+  
