@@ -1,0 +1,73 @@
+/* ====================== footer section ====================== */
+
+footer {
+  background-color: var(--footer);
+  padding: 0px 50px;
+  padding-top: 20px;
+  color: var(--footer-white);
+}
+
+footer > div:first-child {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: space-around;
+  padding: 40px 0;
+}
+/* ========= logo section ========= */
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.footer-logo p {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.footer-logo img {
+  width: 100px;
+  aspect-ratio: 1;
+}
+/* ========= footer elements ========= */
+
+/* links section */
+
+.quick-links {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.quick-links h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+.quick-links a {
+  padding-left: 10px;
+  color: var(--gray-white);
+}
+.social-links h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+.social-links i {
+  font-size: 1.5rem;
+  color: var(--gray-white);
+  margin-right: 5px;
+}
+
+/* copyright section */
+
+footer > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 0;
+  border-top: 2px solid var(--white-gray);
+}
+footer > div:nth-child(2) p {
+  font-size: 1.3rem;
+  text-align: center;
+}
