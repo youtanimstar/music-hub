@@ -58,6 +58,54 @@ function getRandomArbitrary(min, max) {
 // adding the songs card to the playlist section
 let numSongs = 0;
 const addCard = document.querySelectorAll(".addButton");
+
+//display existing playlist songs
+if (JSON.parse(localStorage.getItem(playlistId)).cardInfo != undefined) {
+  playlistObject.cardInfo = JSON.parse(
+    localStorage.getItem(playlistId)
+  ).cardInfo;
+  numSongs += playlistObject.cardInfo.length;
+  document.querySelector(".playlist-subtitle").innerHTML = `${numSongs} Songs`;
+  playlistImage.setAttribute("src", arr[playlistObject.cardInfo[numSongs-1].id2].image);
+  playlistObject.cardInfo.forEach(item => {
+      let id = item.id2;
+      const htmlData = `<img src="${arr[id].image}" alt="${arr[id].title}" />
+      <div class="right">
+          <div class="right-info">
+            <div class="title">${arr[id].title}</div>
+            <div class="description">${arr[id].artist.name}</div>
+          </div>
+          <div class="card-info">
+        <h2 class="time">${arr[id].duration}</h2>
+        <div class="button-section">
+        <button class="button deleteButton " myId="${id}">Delete</button>
+        <a href="../dist/player.html" target="_blank"> 
+        <button class="button playButton" myId="${id}">Play</button></div></a></div>
+      </div>`;
+    const songCard = document.createElement("div");
+    songCard.classList.add("song-card");
+    songCard.insertAdjacentHTML("afterbegin", htmlData);
+    document.querySelector(".playlist-songs").prepend(songCard);
+    const deleteCard = document.querySelector(".deleteButton");
+    deleteCard.addEventListener("click", () => {
+      songCard.remove();
+      numSongs = numSongs - 1;
+      document.querySelector(
+        ".playlist-subtitle"
+      ).innerHTML = `${numSongs} Songs`;
+    });
+
+    const play2 = document.querySelectorAll(".playButton2");
+    play2.forEach((item, index) => {
+      item.addEventListener("click", () => {
+        let id = item.getAttribute("myid");
+        localStorage.setItem("cardId", id);
+        console.log(id);
+      });
+    });
+  })
+}
+
 addCard.forEach((item, index) => {
   item.addEventListener("click", () => {
     let id = Number(item.getAttribute("myId"));
@@ -130,7 +178,7 @@ if (playlistId === "") {
   alert("No such Playlist exits");
   window.close();
 }
-playlistTitle.innerHTML = JSON.parse(localStorage.getItem(playlistId)).title;
+playlistTitle.innerHTML = playlistObject.title;
 
 const play = document.querySelectorAll(".playButton");
 play.forEach((item, index) => {
@@ -140,3 +188,12 @@ play.forEach((item, index) => {
     console.log(id);
   });
 });
+
+function playQueue() {
+  localStorage.setItem("currentQueue", JSON.stringify(playlistObject));
+  localStorage.setItem("cardId", playlistObject.cardInfo[numSongs - 1].id2);
+  localStorage.setItem("playQueue", "true");
+  let newTab = window.open("../dist/player.html", "_blank");
+  newTab.focus();
+}
+document.querySelector(".play-queue-btn").addEventListener("click", playQueue);

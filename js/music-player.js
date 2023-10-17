@@ -5,7 +5,12 @@
 
 import { data } from "../data/data.js";
 const index = localStorage.getItem("cardId");
-
+let currIndex;
+let queue = [];
+if (localStorage.getItem("playQueue") === "true") {
+  queue = JSON.parse(localStorage.getItem("currentQueue")).cardInfo;
+  currIndex = queue.length - 1;
+}
 console.log(index);
 
 const music = new Audio();
@@ -95,4 +100,19 @@ music.addEventListener("ended", () => {
   condition = true;
   range.value = 0;
   currentStart.innerText = `0:00`;
+
+  if (queue.length !== 0 && index > 0) { //play next song
+    currIndex--;
+    localStorage.setItem("cardId", queue[currIndex].id2);
+    music.src = `${data[queue[currIndex].id2].song}`;
+    background.setAttribute("src", data[queue[currIndex].id2].poster);
+    image.setAttribute("src", data[queue[currIndex].id2].image);
+    title.innerHTML = data[queue[currIndex].id2].title;
+    artistName.innerHTML = data[queue[currIndex].id2].artist.name;
+    music.play();
+    play.click();
+  } else {
+    localStorage.removeItem("currentQueue");
+    localStorage.removeItem("playQueue");
+  }
 });
