@@ -46,7 +46,12 @@ footer > div:first-child {
 }
 .quick-links a {
   padding-left: 10px;
-  color: var(--gray-white);
+  color: var(--whtie-inactive);
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.quick-links a:hover{
+  color: var(--white);
 }
 .social-links h3 {
   margin-bottom: 10px;
@@ -54,8 +59,13 @@ footer > div:first-child {
 }
 .social-links i {
   font-size: 1.5rem;
-  color: var(--gray-white);
+  color: var(--whtie-inactive);
   margin-right: 5px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.social-links i:hover{
+  color: var(--white);
 }
 
 /* copyright section */

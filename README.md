@@ -135,7 +135,7 @@ git push origin branch-name
 
 <a href="https://github.com/youtanimstar/music-hub/graphs/contributors">
   
-  <img src="https://contrib.rocks/image?repo=myname-abhik/music-hub" />
+  <img src="https://contrib.rocks/image?repo=Fasina-ayomikun/music-hub" />
 </a>
 
 ## Happy Hacking!
