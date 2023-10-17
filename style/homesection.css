@@ -210,6 +210,7 @@
     overflow-x: auto;
     scroll-behavior: smooth;
     overscroll-behavior-inline: contain;
+    scrollbar-width: none;
     /* padding-left: 100px; */
     /* background-color: red; */
     /* cursor: grab; */
