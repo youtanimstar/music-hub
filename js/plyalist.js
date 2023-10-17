@@ -13,14 +13,15 @@ playlistImage.setAttribute(
   "src",
   "https://community.spotify.com/t5/image/serverpage/image-id/25294i2836BD1C1A31BDF2?v=v2"
 );
-let playlistId = localStorage.getItem("1697545234206");
+let playlistId = localStorage.getItem("currentPlaylist");
 
 let playlistObject = {};
 playlistObject = {
-  title: JSON.parse(playlistId).title,
-  id1: JSON.parse(playlistId).id,
+  title: JSON.parse(localStorage.getItem(playlistId)).title,
+  id1: JSON.parse(localStorage.getItem(playlistId)).id,
   cardInfo: [],
 };
+
 
 // adding the songs card to the suggestion section
 let i;
@@ -46,7 +47,7 @@ for (i = 0; i < arr.length; i++) {
         <button class="button playButton" myId="${i}">Play</button></div></a></div>
       </div>`;
   songCard.insertAdjacentHTML("afterbegin", htmlData);
-  document.querySelector(".playlist-songs-suggestion").appendChild(songCard);
+  document.querySelector(".playlist-songs-suggestion").append(songCard);
 }
 
 function getRandomArbitrary(min, max) {
