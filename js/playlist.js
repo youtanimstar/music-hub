@@ -69,12 +69,18 @@ if (JSON.parse(localStorage.getItem(playlistId)).cardInfo != undefined) {
   displayPlaylistTracks();
 }
 
-function displayPlaylistTracks() {
-  playlistImage.setAttribute(
-    "src",
-    arr[playlistObject.cardInfo[numSongs - 1].id2].image
-  );
-  playlistObject.cardInfo.forEach((item) => {
+function updatePlaylistImage() {
+  if(numSongs > 0)
+    playlistImage.setAttribute(
+      "src",
+      arr[playlistObject.cardInfo[numSongs - 1].id2].image
+    );
+  else
+    playlistImage.setAttribute(
+      "src",
+      "https://community.spotify.com/t5/image/serverpage/image-id/25294i2836BD1C1A31BDF2?v=v2"
+    );
+}
     let id = item.id2;
     const htmlData = `<img src="${arr[id].image}" alt="${arr[id].title}" />
       <div class="right">
