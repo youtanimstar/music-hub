@@ -221,7 +221,10 @@ function playQueue() {
 document.querySelector(".play-queue-btn").addEventListener("click", playQueue);
 
 function shuffleQueue() {
-  playlistObject.cardInfo.sort(() => (Math.random() > 0.5 ? 1 : -1));
-  displayPlaylistTracks();
+  playlistObject.cardInfo.sort(() => Math.random() > 0.5 ? 1 : -1);
+  document.querySelector(".playlist-songs").innerHTML = "";
+  playlistObject.cardInfo.forEach((item, index) => {
+    displayPlaylistTrack(item, index);
+  });
 }
 document.querySelector(".shuffle-btn").addEventListener("click", shuffleQueue);
