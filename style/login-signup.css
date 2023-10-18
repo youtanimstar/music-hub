@@ -37,6 +37,8 @@
 
   form{
     color: var(--gray);
+    margin-bottom: 50px;
+    margin-top: 50px;
   }
   
   .center button{
