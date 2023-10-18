@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -40,7 +41,7 @@
       <nav class="navbar">
         <input type="checkbox" id="check">
         <div class="logo-seciton">
-          <img src="./images/logo.png" alt="logo" />
+          <a href="/" ><img src="./images/logo.png" alt="logo" /></a>
           <h1>Music Hub</h1>
         </div>
         <ul>
@@ -74,7 +75,8 @@
         <div class="user-section">
           <ul>
             <li>
-              <a href="#" id="myBtn">Register</a>
+              <a href="./dist/register.html" id="myBtn">Register</a>
+              <a href="./dist/login.html" id="myBtn">Login</a>
             </li>
           </ul>
           <div class="profile"></div>
@@ -140,34 +142,7 @@
           <span id="currentEnd">0:00</span>
         </div>
       </div>
-      <!-- login signup section -->
-      <div id="myModal" class="modal">
-        <form>
-          <!-- Modal content -->
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <input
-              type="text"
-              id="name"
-              placeholder="Enter Your Github Username"
-            />
-            <br />
-
-            <input type="text" id="email" placeholder="Email" />
-            <br />
-
-            <input type="password" id="password" placeholder="Password" />
-            <br />
-
-            <!--the remember me button-->
-            <!--the sign in button-->
-            <div class="form-element">
-              <button>Submit</button>
-            </div>
-            <!--forget password-->
-          </div>
-        </form>
-      </div>
+      
 
       <footer>
         <div>

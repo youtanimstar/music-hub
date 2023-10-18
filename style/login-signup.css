@@ -1,19 +1,6 @@
 /* The Modal (background) */
-.modal {
-    display: none; 
-    position: fixed; 
-    z-index: 1; 
-    padding-top: 100px; 
-    left: 0;
-    top: 0;
-    width: 100%;
-    background-color: var(--navbar);
-    backdrop-filter: blur(10px);
-    height: 100%; 
-    overflow: auto; 
-  }
+
   
-  /* Modal Content */
 
   .modal-content {
     margin: auto;
@@ -24,33 +11,8 @@
     background-color: var(--gray);
   }
   
-  /* The Close Button */
 
-  .close {
-    color: #9a9a9a;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #ffff;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  .modal.active{
-      top:50%;
-      opacity:1;
-      transform:translate(-50%,-50%) scale(1);
-      transition: top 0ms ease-in-out 0ms,
-  }
-  .modal .form-element label{
-      font-size: 14px;
-      color: #222;
-  }
+
   
   .form-element button
   {
@@ -67,12 +29,16 @@
       padding: 8px;
       transition: all 0.1s linear;
   }
+
   .form-element button:hover{
     background:var(--white);
     color: var(--gray);
   }
+
   form{
     color: var(--gray);
+    margin-bottom: 50px;
+    margin-top: 50px;
   }
   
   .center button{
@@ -90,7 +56,6 @@
   #name,#email,#password
   {
       width:100%;
-     
       margin-top: 5px;
       display: block;
       width: 100%;
@@ -100,6 +65,69 @@
       border-radius: 5px;
       background-color: var(--gray);
       color: var(--white);
-      font-size: 20px;
-      
+      font-size: 20px;  
   }
+
+  .user-section ul {
+    display: flex;
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove default list padding */
+  }
+  
+  .user-section li {
+    display: flex; /* Make the list items flex containers */
+  }
+  
+  .user-section a {
+    margin-right: 10px; /* Add margin to separate the buttons */
+  }
+ /* Styles for the checkbox and label */
+
+
+
+ 
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+}
+
+
+
+.submit-button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+/* Styles for the checkbox and label */
+.checkbox-label {
+  display: flex;
+  /* Align the checkbox and label vertically in the center */
+  color: white; /* Add your desired text color */
+}
+
+
+/* Additional styling for the Register button */
+
+
+
+
+  
