@@ -248,8 +248,13 @@
     /* height: 100px; */
     width: 200px;
     height: 100%;
+    transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55),
+    filter 0.5s ease-in-out;
 }
-
+.home_section .profile-artists .item li img:hover {
+    transform: scale(1.2);
+    filter: grayscale(50%);
+}
 
 /* ========= songs section ========= */
 .home_section .songs{
