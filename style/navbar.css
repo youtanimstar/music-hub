@@ -25,9 +25,17 @@
   cursor: pointer;
 }
 
+.navbar-collapse
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+
 .navbar .logo-seciton img{
   height: 100px;
-  /* width: 50px; */
 }
 
 .navbar .logo-seciton h1{
@@ -55,7 +63,6 @@
   padding: 7px 20px;
   width: fit-content;
   height: fit-content;
-  /* background-color: red; */
   border-radius: 50px;
   display: flex;
   justify-content: center;
@@ -68,9 +75,7 @@
 .navbar ul li a:hover > .title{
   color: var(--gray);
 }
-.navbar ul li a:hover{
-  
-}
+
 .navbar ul li a .title{
   font-size: 20px;
   color: var(--white);
@@ -91,9 +96,7 @@
   align-items: center;
   
 }
-.navbar .user-section ul{
-  /* display: none; */
-}
+
 .navbar .user-section a{
   border: 2.5px solid var(--white);
   font-size: 20px;
