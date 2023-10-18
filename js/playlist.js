@@ -210,6 +210,10 @@ function playQueue() {
   localStorage.setItem("playQueue", "true");
   let newTab = window.open("../dist/player.html", "_blank");
   newTab.focus();
+  newTab.addEventListener("beforeunload", () => {
+      localStorage.removeItem("currentQueue");
+      localStorage.removeItem("playQueue");
+  });
 }
 document.querySelector(".play-queue-btn").addEventListener("click", playQueue);
 
