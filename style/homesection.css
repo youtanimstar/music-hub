@@ -210,7 +210,6 @@
     overflow-x: auto;
     scroll-behavior: smooth;
     overscroll-behavior-inline: contain;
-    scrollbar-width: none;
     /* padding-left: 100px; */
     /* background-color: red; */
     /* cursor: grab; */
@@ -339,4 +338,40 @@
 }
 .home_section .songs .song-card-section .song-card:hover > .songs-button{
     color: var(--white);
+}
+
+@media(max-width: 992px) {
+    .home_section .latest-songs .latest-songs-item li {
+        height: 260px;
+    }
+
+    .home_section .profile-artists .top h1 {
+        font-size: 20px;
+    }
+
+    .home_section .profile-artists .item li {
+        min-width: 110px;
+        height: 110px;
+    }
+
+    .home_section {
+      width: auto;
+    }
+
+    .home_section .songs {
+        gap: 10px;
+    }
+
+    .home_section .latest-songs .latest-songs-item li .item-text-section .item-title,
+    .home_section .songs .title {
+        font-size: 20px;
+    }
+
+    .home_section .songs .song-card-section {
+        padding: 10px;
+    }
+
+    .home_section .songs .song-card-section .song-card .right .title {
+        font-size: 14px;
+    }
 }

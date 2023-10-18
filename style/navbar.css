@@ -123,7 +123,71 @@
   border: 2px solid var(--white);
 }
 
-
-.user-section{
+/*  menu wrap  */
+.menu-wrap {
+  display: flex;
+  align-items: center;
+}
+.navbar-toggler {
   display: none;
+  height: 50px;
+  width: 50px;
+  background-color: #1e1e25;
+  border: solid 1px #fff;
+  border-radius: 10px;
+  padding: 9px;
+  color: #fff;
+}
+
+.navbar-toggler:active, 
+.navbar-toggler:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.navbar-collapse {
+  display: flex;
+}
+
+.menu-wrap_active {
+  display: block !important;
+}
+
+/* @media(max-width: 992px) { */
+@media(max-width: 992px) {
+  .navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100px;
+    gap: 0;
+    padding: 0;
+  }
+
+  .menu-wrap {
+    display: none;
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+    background-color: #1e1e25;
+    justify-content: center;
+    padding: 0 0 25px 0;
+  }
+
+  .navbar-toggler {
+    display: block;
+  }
+
+  .navbar-collapse {
+    flex-direction: column;
+    margin: 0 0 25px 0;
+  }
+
+  .menu-list {
+    flex-direction: column;
+  }
+
+  .user-section {
+    margin-top: 20px;
+  }
 }
