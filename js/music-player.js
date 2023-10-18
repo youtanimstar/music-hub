@@ -73,6 +73,7 @@ music.addEventListener("timeupdate", () => {
 
   let min = Math.floor(music_dur / 60);
   let sec = Math.floor(music_dur % 60);
+  if (!sec || !min) sec = min = 0;
   if (sec < 10) {
     sec = `0${sec}`;
   }
@@ -99,6 +100,7 @@ music.addEventListener("ended", () => {
   condition = true;
   range.value = 0;
   currentStart.innerText = `0:00`;
+  currentEnd.innerText = `0:00`;
 
   if (queue.length !== 0 && currIndex > 0) { //play next song
     currIndex--;
