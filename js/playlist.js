@@ -150,12 +150,6 @@ addCard.forEach((item, index) => {
     let temp1 = new Date();
     let temp2 = temp1.getTime();
 
-    if (JSON.parse(localStorage.getItem(playlistId)).cardInfo != undefined) {
-      playlistObject.cardInfo = JSON.parse(
-        localStorage.getItem(playlistId)
-      ).cardInfo;
-    }
-
     playlistObject.cardInfo.push({
       image: arr[id].image,
       title: arr[id].title,
@@ -166,7 +160,6 @@ addCard.forEach((item, index) => {
     });
 
     localStorage.setItem(playlistId, JSON.stringify(playlistObject));
-
     numSongs++;
     document.querySelector(
       ".playlist-subtitle"

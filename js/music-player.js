@@ -11,7 +11,6 @@ if (localStorage.getItem("playQueue") === "true") {
   queue = JSON.parse(localStorage.getItem("currentQueue")).cardInfo;
   currIndex = queue.length - 1;
 }
-console.log(index);
 
 const music = new Audio();
 const background = document.querySelector(".background");
@@ -101,7 +100,7 @@ music.addEventListener("ended", () => {
   range.value = 0;
   currentStart.innerText = `0:00`;
 
-  if (queue.length !== 0 && index > 0) { //play next song
+  if (queue.length !== 0 && currIndex > 0) { //play next song
     currIndex--;
     localStorage.setItem("cardId", queue[currIndex].id2);
     music.src = `${data[queue[currIndex].id2].song}`;
