@@ -64,9 +64,12 @@ if (JSON.parse(localStorage.getItem(playlistId)).cardInfo != undefined) {
   playlistObject.cardInfo = JSON.parse(
     localStorage.getItem(playlistId)
   ).cardInfo;
+  
   numSongs += playlistObject.cardInfo.length;
   document.querySelector(".playlist-subtitle").innerHTML = `${numSongs} Songs`;
-  displayPlaylistTracks();
+  playlistObject.cardInfo.forEach((item, index) => {
+    displayPlaylistTrack(item, index);
+  });
 }
 
 function updatePlaylistImage() {
@@ -81,6 +84,9 @@ function updatePlaylistImage() {
       "https://community.spotify.com/t5/image/serverpage/image-id/25294i2836BD1C1A31BDF2?v=v2"
     );
 }
+
+function displayPlaylistTrack(item, index) {
+  updatePlaylistImage(); 
     let id = item.id2;
     const htmlData = `<img src="${arr[id].image}" alt="${arr[id].title}" />
       <div class="right">
