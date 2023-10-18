@@ -43,9 +43,10 @@
           <a href="/" ><img src="./images/logo.png" alt="logo" /></a>
           <h1>Music Hub</h1>
         </div>
+       
         <ul>
           <li>
-            <a href="">
+            <a href="/">
               <span class="icon"
                 ><i class="fa-solid fa-house-chimney"></i
               ></span>
@@ -80,7 +81,49 @@
           </ul>
           <div class="profile"></div>
         </div>
+        <div class="hamburger" id="hamb" >
+          <label for="hamburger" onclick="showMenuItems()"  >&#9776;</label>
+        </div>
+
+
+        <div id="mobile-menu">
+          <label class="close" id="close-menu" onclick="hideMenuItems()"  >&times;</label>
+          <p>
+            <a href="/">
+              <span class="icon"
+                ><i class="fa-solid fa-house-chimney"></i
+              ></span>
+              <span class="title">Home</span>
+            </a>
+          </p>
+          <p>
+            <a href="./dist/search.html">
+              <span class="icon"><i class="fa-solid fa-compass"></i></span>
+              <span class="title">Search</span>
+            </a>
+          </p>
+          <p>
+            <a href="./dist/library.html">
+              <span class="icon"><i class="fa-solid fa-folder"></i></span>
+              <span class="title">Library</span>
+            </a>
+          </p>
+          <li>
+            <a href="./dist/aboutus.html">
+              <span class="icon"><i class="fa-solid fa-home"></i></span>
+              <span class="title">About Us</span>
+            </a>
+          </li>
+
+          <div class="user">
+                <a href="./dist/register.html" id="myBtn">Register</a>
+                <a href="./dist/login.html" id="myBtn">Login</a>
+          </div>
+        </div>
+        
+
       </nav>
+      
       <!-- home section -->
       <div class="home_section">
         <div class="latest-songs">
@@ -138,34 +181,7 @@
         </div>
       </div>
       <!-- login signup section -->
-      <div id="myModal" class="modal">
-        <form>
-          <!-- Modal content -->
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <input
-              type="text"
-              id="name"
-              placeholder="Enter Your Github Username"
-            />
-            <br />
-
-            <input type="text" id="email" placeholder="Email" />
-            <br />
-
-            <input type="password" id="password" placeholder="Password" />
-            <br />
-
-            <!--the remember me button-->
-            <!--the sign in button-->
-            <div class="form-element">
-              <button>Submit</button>
-            </div>
-            <!--forget password-->
-          </div>
-        </form>
-      </div>
-
+     
       <footer>
         <div>
           <div class="footer-logo">
@@ -206,6 +222,7 @@
     <script src="./js/latestsongs.js" type="module"></script>
     <script src="./js/data.js" type="module"></script>
     <script src="./js/player.js" type="module"></script>
-    <script src="./js/login-signup.js" type="module"></script>
+    <script src="./js/login-signup.js" ></script>
+   
   </body>
 </html>
