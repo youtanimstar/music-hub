@@ -107,12 +107,14 @@ function displayPlaylistTrack(item, index) {
     document.querySelector(".playlist-songs").prepend(songCard);
     const deleteCard = document.querySelector(".deleteButton");
     deleteCard.addEventListener("click", () => {
+      playlistObject.cardInfo.splice(index, 1);
       songCard.remove();
       numSongs = numSongs - 1;
       document.querySelector(
         ".playlist-subtitle"
       ).innerHTML = `${numSongs} Songs`;
-    });
+      localStorage.setItem(playlistId, JSON.stringify(playlistObject));
+      updatePlaylistImage(); 
 
     const play2 = document.querySelectorAll(".playButton2");
     play2.forEach((item, index) => {
@@ -171,11 +173,14 @@ addCard.forEach((item, index) => {
     ).innerHTML = `${numSongs} Songs`;
     const deleteCard = document.querySelector(".deleteButton");
     deleteCard.addEventListener("click", () => {
+      playlistObject.cardInfo.splice(index, 1);
       songCard.remove();
       numSongs = numSongs - 1;
       document.querySelector(
         ".playlist-subtitle"
       ).innerHTML = `${numSongs} Songs`;
+      localStorage.setItem(playlistId, JSON.stringify(playlistObject));
+      updatePlaylistImage(); 
     });
 
     const play2 = document.querySelectorAll(".playButton2");
@@ -185,7 +190,7 @@ addCard.forEach((item, index) => {
         localStorage.setItem("cardId", id);
       });
     });
-    playlistImage.setAttribute("src", arr[id].image);
+    updatePlaylistImage(); 
   });
 });
 
