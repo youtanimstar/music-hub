@@ -45,3 +45,8 @@ rightScrolls.addEventListener("click", () => {
 leftScrolls.addEventListener("click", () => {
   item.scrollLeft += 300;
 });
+
+const keyCopyright = document.querySelector("#copyClick")
+keyCopyright.addEventListener('click', ()=>{
+  window.location.href="https://github.com/youtanimstar/music-hub/"
+})
