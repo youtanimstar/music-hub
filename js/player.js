@@ -121,11 +121,17 @@ const songCard = document.querySelectorAll(".song-card");
 const songCardButtons = document.querySelectorAll(".songs-button");
 const player = document.querySelector(".player");
 const playerTitle = document.querySelector("#player-title");
+const artistName = document.querySelector("#artist-name");
+const playerImage = document.querySelector("#player-image");
+
+
 let songIndex;
 songCard.forEach((item, index) => {
   item.addEventListener("click", () => {
     songIndex = index;
     playerTitle.innerHTML = data[index].title;
+    artistName.innerHTML = data[index].artist.name;
+    playerImage.src = data[index].image;
     player.classList.add("active");
     music.src = `${data[index].song}`;
     music.play();
@@ -156,6 +162,7 @@ back.addEventListener("click", () => {
     songIndex = songCard.length - 1;
     music.src = `${data[songIndex].song}`;
     playerTitle.innerHTML = data[songIndex].title;
+    playerImage.src = data[songIndex].image;
     music.play();
     masterPlay.classList.remove("bi-play-fill");
     masterPlay.classList.add("bi-pause-fill");
@@ -168,6 +175,7 @@ back.addEventListener("click", () => {
   } else {
     music.src = `${data[songIndex].song}`;
     playerTitle.innerHTML = data[songIndex].title;
+    playerImage.src = data[songIndex].image;
     music.play();
     masterPlay.classList.remove("bi-play-fill");
     masterPlay.classList.add("bi-pause-fill");
@@ -188,6 +196,7 @@ next.addEventListener("click", () => {
     songIndex = 0;
     music.src = `${data[songIndex].song}`;
     playerTitle.innerHTML = data[songIndex].title;
+    playerImage.src = data[songIndex].image;
     music.play();
     masterPlay.classList.remove("bi-play-fill");
     masterPlay.classList.add("bi-pause-fill");
@@ -200,6 +209,7 @@ next.addEventListener("click", () => {
   } else {
     music.src = `${data[songIndex].song}`;
     playerTitle.innerHTML = data[songIndex].title;
+    playerImage.src = data[songIndex].image;
     music.play();
     masterPlay.classList.remove("bi-play-fill");
     masterPlay.classList.add("bi-pause-fill");

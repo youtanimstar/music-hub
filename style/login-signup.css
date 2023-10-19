@@ -37,6 +37,8 @@
 
   form{
     color: var(--gray);
+    margin-bottom: 50px;
+    margin-top: 50px;
   }
   
   .center button{
@@ -109,6 +111,7 @@ input[type="email"] {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  
 }
 
 .submit-button:hover {
@@ -124,6 +127,21 @@ input[type="email"] {
 
 
 /* Additional styling for the Register button */
+
+.user-guide{
+  margin: 24px auto;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.user-guide>p{
+  color: white;
+  display: inline;
+
+}
+.user-guide>a{
+  color: rgb(277,0,255);
+}
+
 
 
 
