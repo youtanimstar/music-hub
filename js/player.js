@@ -211,3 +211,30 @@ next.addEventListener("click", () => {
     });
   }
 });
+
+function showPlayer(){
+  const songCard = document.querySelectorAll(".song-card");
+  const songCardButtons = document.querySelectorAll(".songs-button");
+  const player = document.querySelector(".player");
+  const playerTitle = document.querySelector("#player-title");
+  let songIndex;
+  songCard.forEach((item, index) => {
+    item.addEventListener("click", () => {
+      songIndex = index;
+      playerTitle.innerHTML = data[index].title;
+      player.classList.add("active");
+      music.src = `${data[index].song}`;
+      music.play();
+      masterPlay.classList.remove("bi-play-fill");
+      masterPlay.classList.add("bi-pause-fill");
+      wave.classList.add("active2");
+      music.addEventListener("ended", () => {
+        masterPlay.classList.add("bi-play-fill");
+        masterPlay.classList.remove("bi-pause-fill");
+        wave.classList.remove("active2");
+        bar2.style.width = `0%`;
+        dot.style.left = `0%`;
+      });
+    });
+  });
+}
