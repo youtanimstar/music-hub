@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -41,9 +40,10 @@
       <!-- Navigation Section -->
       <nav class="navbar">
         <div class="logo-seciton">
-          <a href="/" ><img src="./images/logo.png" alt="logo" /></a>
+          <img src="./images/logo.png" alt="logo" />
           <h1>Music Hub</h1>
         </div>
+
         <ul>
           <li>
             <a href="/">
@@ -80,6 +80,51 @@
             </li>
           </ul>
           <div class="profile"></div>
+
+        <button class="navbar-toggler" type="button">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"></path></svg>
+        </button>
+        <div class="menu-wrap">
+          <div class="navbar-collapse">
+            <ul class="menu-list">
+              <li>
+                <a href="">
+                  <span class="icon"
+                    ><i class="fa-solid fa-house-chimney"></i
+                  ></span>
+                  <span class="title">Home</span>
+                </a>
+              </li>
+              <li>
+                <a href="./dist/search.html">
+                  <span class="icon"><i class="fa-solid fa-compass"></i></span>
+                  <span class="title">Search</span>
+                </a>
+              </li>
+              <li>
+                <a href="./dist/library.html">
+                  <span class="icon"><i class="fa-solid fa-folder"></i></span>
+                  <span class="title">Library</span>
+                </a>
+              </li>
+              <li>
+                <a href="./dist/aboutus.html">
+                  <span class="icon"><i class="fa-solid fa-folder"></i></span>
+                  <span class="title">About Us</span>
+                </a>
+              </li>
+            </ul>
+            <div class="user-section">
+              <ul>
+                <li>
+                  <a href="./register.html" id="myBtn">Register</a>
+                  <a href="./login.html" id="myBtn">Login</a>
+                </li>
+              </ul>
+              <div class="profile"></div>
+            </div>
+          </div>
+
         </div>
         <div class="hamburger" id="hamb" >
           <label for="hamburger" onclick="showMenuItems()"  >&#9776;</label>
@@ -180,8 +225,11 @@
           <span id="currentEnd">0:00</span>
         </div>
       </div>
+
       <!-- login signup section -->
     </main>
+
+
 
     <footer>
       <div>
@@ -189,11 +237,16 @@
           <img src="./images/logo.png" alt="Music Hub" />
           <p>Music Hub</p>
         </div>
+
         <div class="quick-links">
           <h3>Quick Links</h3>
           <a href="#home_section">Home</a>
           <a href="dist/library.html">Library</a>
           <a href="dist/aboutus.html">About Us</a>
+
+        <div class="footer-container">
+          <p class="copyright"> CopyRights © <script>document.write(new Date().getFullYear()) ;</script>. All Rights Reserved by <strong style="cursor: pointer;" id="copyClick">Music-Hub</strong></p>
+
         </div>
         <div class="quick-links">
           <h3>Quick Links</h3>
@@ -218,6 +271,7 @@
     </footer>
 
     <!-- scripts -->
+    <script src="./js/menu.js" type="module"></script>
     <script src="./js/profileartists.js" type="module"></script>
     <script src="./js/latestsongs.js" type="module"></script>
     <script src="./js/data.js" type="module"></script>

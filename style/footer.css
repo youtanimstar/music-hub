@@ -81,9 +81,45 @@ footer > div:nth-child(2) p {
   font-size: 1.3rem;
   text-align: center;
 }
-.copyright{
-  color: white;
-  font-size: larger;
-  text-align: center;
-  bottom: 0;
+
+@media(max-width: 992px) {
+  footer {
+    padding: 30px 50px 50px 50px;
+  }
+
+  footer > div:first-child {
+    flex-wrap: nowrap;
+  }
+
+  .footer-logo img {
+    width: 80px;
+  }
+
+  .footer-logo p,
+  .quick-links h3,
+  .social-links h3 {
+    font-size: 1rem;
+  }
+
+  .social-links {
+    text-align: center;
+  }
+
+  footer > div:first-child {
+    padding: 0 0 20px 0;
+  }
+ 
+  footer > div:nth-child(2) p {
+    font-size: .9rem;
+  }
+}
+
+@media(max-width: 460px) {
+  footer {
+    padding: 30px 50px 0px 50px;
+  } 
+
+  footer > div:first-child {
+    flex-wrap: wrap;
+  }
 }
