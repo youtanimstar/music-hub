@@ -88,6 +88,69 @@
   display: none;
 }
 
+/* Hamburger menu */
+label #btn,
+label #cancel {
+  color: white;
+  font-size: 30px;
+  float: right;
+  line-height: 18px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  label #btn {
+    display: block;
+  }
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: fit-content;
+    background:var(--navbar);
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav ul li{
+    display: block;
+    margin: 10px 0;
+    line-height: 30px;
+  }
+
+  nav ul li a{
+    font-size: 20px;
+    margin: 10px;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+  #check:checked ~ label #btn{
+    display: none;
+  }
+  #check:checked ~ label #cancel{
+    display: block;
+  }
+  .navbar .user-section a{
+    display: none;
+  }
+}
+
+@media (min-width: 1000px) {
+  .navbar .user-section a {
+    display: block;
+  }
+}
+
 /* user section */
 
 .navbar .user-section{
@@ -103,6 +166,7 @@
   color: var(--white);
   font-weight: 600;
   letter-spacing: 2px;
+  display: block;
 }
 .navbar .user-section a:hover{
   color: var(--gray);
