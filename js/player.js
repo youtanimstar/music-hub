@@ -162,6 +162,7 @@ back.addEventListener("click", () => {
     songIndex = songCard.length - 1;
     music.src = `${data[songIndex].song}`;
     playerTitle.innerHTML = data[songIndex].title;
+    playerImage.src = data[songIndex].image;
     music.play();
     masterPlay.classList.remove("bi-play-fill");
     masterPlay.classList.add("bi-pause-fill");
@@ -174,6 +175,7 @@ back.addEventListener("click", () => {
   } else {
     music.src = `${data[songIndex].song}`;
     playerTitle.innerHTML = data[songIndex].title;
+    playerImage.src = data[songIndex].image;
     music.play();
     masterPlay.classList.remove("bi-play-fill");
     masterPlay.classList.add("bi-pause-fill");
@@ -194,6 +196,7 @@ next.addEventListener("click", () => {
     songIndex = 0;
     music.src = `${data[songIndex].song}`;
     playerTitle.innerHTML = data[songIndex].title;
+    playerImage.src = data[songIndex].image;
     music.play();
     masterPlay.classList.remove("bi-play-fill");
     masterPlay.classList.add("bi-pause-fill");
@@ -206,6 +209,7 @@ next.addEventListener("click", () => {
   } else {
     music.src = `${data[songIndex].song}`;
     playerTitle.innerHTML = data[songIndex].title;
+    playerImage.src = data[songIndex].image;
     music.play();
     masterPlay.classList.remove("bi-play-fill");
     masterPlay.classList.add("bi-pause-fill");
