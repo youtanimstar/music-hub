@@ -103,6 +103,7 @@ footer > div:nth-child(2) p {
 
   .social-links {
     text-align: center;
+    margin-right: 30px;
   }
 
   footer > div:first-child {
