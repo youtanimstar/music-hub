@@ -1,6 +1,6 @@
 /* ====================== home section ====================== */
 .home_section{
-    width: 1180px;
+    /* width: 1180px; */
     height: fit-content;
     /* height: 200vh; */
     /* background-color: var(--gray-white); */
@@ -259,8 +259,10 @@
 
 /* ========= songs section ========= */
 .home_section .songs{
-    width: 100%;
+    width: 90%;
     height: fit-content;
+    margin-right: 5%;
+    margin-left: 5%;
     /* background-color: red; */
     margin-top: 50px;
     display: flex;
@@ -366,6 +368,9 @@
 
     .home_section .songs {
         gap: 10px;
+        width: 100%;
+        margin-right: 0;
+    margin-left: 0;
     }
 
     .home_section .latest-songs .latest-songs-item li .item-text-section .item-title,

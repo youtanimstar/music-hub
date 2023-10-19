@@ -1,5 +1,5 @@
 /* ====================== navigation section ====================== */
-.navbar{
+.navbar {
   width: 100%;
   height: 80px;
   backdrop-filter: blur(10px);
@@ -14,9 +14,10 @@
   padding: 0px 30px;
   z-index: 10;
 }
+
 /* ========= logo section ========= */
 
-.navbar .logo-seciton{
+.navbar .logo-seciton {
   height: fit-content;
   display: flex;
   justify-content: center;
@@ -25,8 +26,7 @@
   cursor: pointer;
 }
 
-.navbar-collapse
-{
+.navbar-collapse {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,11 +34,11 @@
 }
 
 
-.navbar .logo-seciton img{
+.navbar .logo-seciton img {
   height: 100px;
 }
 
-.navbar .logo-seciton h1{
+.navbar .logo-seciton h1 {
   color: var(--white);
   text-transform: capitalize;
 }
@@ -48,18 +48,19 @@
 /* routing section */
 
 
-.navbar ul{
+.navbar ul {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
 
-.navbar ul li{
+.navbar ul li {
   width: fit-content;
   height: fit-content;
 }
-.navbar ul li a{
+
+.navbar ul li a {
   padding: 7px 20px;
   width: fit-content;
   height: fit-content;
@@ -69,14 +70,17 @@
   align-items: center;
   transition: all 0.1s ease;
 }
-.navbar ul li a:hover{
+
+/* .navbar ul li a:hover{
   background-color: var(--white);
-}
-.navbar ul li a:hover > .title{
+
+  transition: background  0.5s;
+} */
+.navbar ul li a:hover>.title {
   color: var(--gray);
 }
 
-.navbar ul li a .title{
+.navbar ul li a .title {
   font-size: 20px;
   color: var(--white);
   font-weight: 600;
@@ -84,32 +88,38 @@
 }
 
 
-.navbar ul li a .icon{
+.navbar ul li a .icon {
   display: none;
 }
 
 /* user section */
 
-.navbar .user-section{
+.navbar .user-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
 }
 
-.navbar .user-section a{
+.navbar .user-section a {
   border: 2.5px solid var(--white);
   font-size: 20px;
   color: var(--white);
   font-weight: 600;
   letter-spacing: 2px;
 }
-.navbar .user-section a:hover{
+
+.navbar .user-section a:hover {
   color: var(--gray);
+  border: 2.5px solid rgba(204, 23, 23, 0.671);
+  background-color: var(--white);
+  scale: 1.1;
+  transition: all 0.5s;
 }
+
 /* profile section */
 
-.navbar .user-section .profile{
+.navbar .user-section .profile {
   height: 55px;
   width: 55px;
   background-image: url("../images/profile.jpg");
@@ -122,7 +132,8 @@
   border: 2px solid transparent;
   display: none;
 }
-.navbar .user-section .profile:hover{
+
+.navbar .user-section .profile:hover {
   border: 2px solid var(--white);
 }
 
@@ -131,6 +142,7 @@
   display: flex;
   align-items: center;
 }
+
 .navbar-toggler {
   display: none;
   height: 50px;
@@ -142,7 +154,7 @@
   color: #fff;
 }
 
-.navbar-toggler:active, 
+.navbar-toggler:active,
 .navbar-toggler:hover {
   background-color: #fff;
   color: #000;
@@ -193,4 +205,44 @@
   .user-section {
     margin-top: 20px;
   }
+}
+
+.menu-list>li>a {
+  position: relative;
+}
+
+.menu-list>li:hover a {
+  background: -webkit-linear-gradient(#4b00ff, #FF9800);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu-list>li>a:before,
+.menu-list>li>a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 3px;
+  background: #4b00ff;
+  mix-blend-mode: multiply;
+  transition: 0.6s;
+}
+
+ul.menu-list>li>a:after {
+  background: #FF9800;
+  top: -3px;
+  right: 0;
+  left: unset;
+}
+
+ul.menu-list>li:hover a:before,
+ul.menu-list>li:hover a:after {
+  width: 43%;
+  transform: translateX(100%);
+}
+
+ul.menu-list>li:hover a:after {
+  transform: translateX(-100%);
 }
