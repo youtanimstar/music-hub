@@ -114,11 +114,11 @@ const songs = [
     duration: "5:20"
   },
 ];
+
 let arr9 = []
 let arr10 = []
 for (let i = 0; i < songs.length; i++) {
   arr9.push(songs[i].songName.toLowerCase())
-  
 }
 for (let i = 0; i < songs.length; i++) {
   arr10.push(songs[i].songName.toLowerCase().split(''))
@@ -131,22 +131,22 @@ const func1 = ()=>{
 var box0j = document.querySelector('.box0i')
 for (let i = 0; i < songs.length; ++i) {
   const htmlData = `<div class="boxii2">
-<div class="img"><img src="${songs[i].poster}" class="image" alt=""></div>
-<div class="ptag">${songs[i].songName}</div>
-<div class="musicnametag">${songs[i].artist}</div>
-<div class="like">
-<div class="boxsub">
-    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
-</div>
-<div class="time">${songs[i].duration}</div>
-<div class="add">
-<div class="boxsub" id = 'camel${i}'>
-    <i class="fa fa-music" aria-hidden="true" id = 'camel${i}'></i>
-</div>
-</div>
-</div>
+    <div class="img"><img src="${songs[i].poster}" class="image" alt=""></div>
+    <div class="ptag">${songs[i].songName}</div>
+    <div class="musicnametag">${songs[i].artist}</div>
+    <div class="like">
+    <div class="boxsub">
+        <i class="fa fa-play" aria-hidden="true"></i>
+    </div>
+    <div class="time">${songs[i].duration}</div>
+    <div class="add">
+    <div class="boxsub" id = 'camel${i}'>
+        <i class="fa fa-music" aria-hidden="true" id = 'camel${i}'></i>
+    </div>
+    </div>
+    </div>
 
-</div>`
+    </div>`
   box0j.insertAdjacentHTML('beforebegin', htmlData)
 }
 }
@@ -226,7 +226,6 @@ searchicon.addEventListener('input', () => {
        </div>
        </div>
        </div>
-       
        </div>`
        document.querySelector('.box4').append(note);
        box4.style.height = "100vh"
