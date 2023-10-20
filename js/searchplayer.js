@@ -3,125 +3,20 @@
 // DESCRIPTION: In this section we can search any song from the data
 // ============================
 
+import { data } from "../data/data.js";
 const box3 = document.querySelector('.box3')
 const  note = document.createElement('div')
     note.classList.add(`text`);
 let arr2 = [0]
-const songs = [
-  {
-    id: "1",
-    songName: "On My Way",
-    artist: "Alan Walker",
-    poster: "../images/1.jpg",
-    duration: "4:10"
-  },
-  {
-    id: "2",
-    songName: "Alan Walker-Fade",
-    artist: "Alan Walker",
-    poster: "../images/2.jpg",
-    duration: "3:25"
-  },
-  {
-    id: "3",
-    songName: "Cartoon - On & On",
-    artist: "Daniel Levi",
-    poster: "../images/3.jpg",
-    duration: "5:20"
-  },
-  {
-    id: "4",
-    songName: `Warriyo - Mortals`,
-    artist: "Mortals",
-    poster: "../images/4.jpg",
-    duration: "5:25"
-  },
-  {
-    id: "5",
-    songName: "Ertugrul Gazi",
-    artist: "Ertugru",
-    poster: "../images/5.jpg",
-    duration: "3:10"
-  },
-  {
-    id: "6",
-    songName: "Electronic Music",
-    artist: "Electro",
-    poster: "../images/6.jpg",
-    duration: "4:05"
-  },
-  {
-    id: "7",
-    songName: "Agar Tum Sath Ho",
-    artist: "Tamashaa",
-    poster: "../images/7.jpg",
-    duration: "5:25"
-  },
-  {
-    id: "8",
-    songName: "Suna Hai",
-    artist: "Neha Kakker",
-    poster: "../images/8.jpg",
-    duration: "4:47"
-  },
-  {
-    id: "9",
-    songName: "Dilbar",
-    artist: "Satyameva Jayate",
-    poster: "../images/9.jpg",
-    duration: "4:20"
-  },
-  {
-    id: "10",
-    songName: "Duniya",
-    artist: "Luka Chuppi",
-    poster: "../images/10.jpg",
-    duration: "4:10"
-  },
-  {
-    id: "11",
-    songName: "Lagdi Lahore Di",
-    artist: "Street Dancer 3D",
-    poster: "../images/11.jpg",
-    duration: "5:40"
-  },
-  {
-    id: "12",
-    songName: "Putt Jatt Da",
-    artist: "Putt Jatt Da",
-    poster: "../images/12.jpg",
-    duration: "3:55"
-  },
-  {
-    id: "13",
-    songName: "Baarishein",
-    artist: "Atif Aslam",
-    poster: "../images/13.jpg",
-    duration: "2:52"
-  },
-  {
-    id: "14",
-    songName: "Vaaste",
-    artist: "Dhvani Bhanushali",
-    poster: "../images/14.jpg",
-    duration: "6:26"
-  },
-  {
-    id: "15",
-    songName: "Lut Gaye",
-    artist: "Jubin Nautiyal",
-    poster: "../images/15.jpg",
-    duration: "5:20"
-  },
-];
-
+let songs = data;
+console.log(songs)
 let arr9 = []
 let arr10 = []
 for (let i = 0; i < songs.length; i++) {
-  arr9.push(songs[i].songName.toLowerCase())
+  arr9.push(songs[i].title.toLowerCase())
 }
 for (let i = 0; i < songs.length; i++) {
-  arr10.push(songs[i].songName.toLowerCase().split(''))
+  arr10.push(songs[i].title.toLowerCase().split(''))
   // console.log(arr10[i])
 }
 // console.log(arr10[0][1])
@@ -132,11 +27,11 @@ var box0j = document.querySelector('.box0i')
 for (let i = 0; i < songs.length; ++i) {
   const htmlData = `<div class="boxii2">
     <div class="img"><img src="${songs[i].poster}" class="image" alt=""></div>
-    <div class="ptag">${songs[i].songName}</div>
-    <div class="musicnametag">${songs[i].artist}</div>
+    <div class="ptag">${songs[i].title}</div>
+    <div class="musicnametag">${songs[i].artist.name}</div>
     <div class="like">
     <div class="boxsub">
-        <i class="fa fa-play" aria-hidden="true" onclick="showPlayer()"  ></i>
+        <i class="fa fa-play play-button " aria-hidden="true" ></i>
     </div>
     <div class="time">${songs[i].duration}</div>
     <div class="add">
@@ -164,11 +59,11 @@ searchicon.addEventListener('input', () => {
     if ((ar == arr9[i])) {
        box4.innerHTML =  `<div class="boxii2">
        <div class="img"><img src="${songs[i].poster}" class="image" alt=""></div>
-       <div class="ptag">${songs[i].songName}</div>
-       <div class="musicnametag">${songs[i].artist}</div>
+       <div class="ptag">${songs[i].title}</div>
+       <div class="musicnametag">${songs[i].artist.name}</div>
        <div class="like">
        <div class="boxsub">
-           <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+       <i class="fa fa-play play-button " aria-hidden="true" ></i>
        </div>
        <div class="time">${songs[i].duration}</div>
        <div class="add">
@@ -177,7 +72,6 @@ searchicon.addEventListener('input', () => {
        </div>
        </div>
        </div>
-       
        </div>`
        box4.style.height = "100vh"
       document.querySelector('body').style.overflowY = "hidden"
@@ -208,16 +102,16 @@ searchicon.addEventListener('input', () => {
     {
           // console.log(arr10[i][j])
     if ((ar[j] == arr10[i][j])) {
-       console.log(songs[i].songName)
+       console.log(songs[i].title)
       const  note = document.createElement('div')
     note.classList.add(`text`);
        note.innerHTML =  `<div class="boxii2">
        <div class="img"><img src="${songs[i].poster}" class="image" alt=""></div>
-       <div class="ptag">${songs[i].songName}</div>
-       <div class="musicnametag">${songs[i].artist}</div>
+       <div class="ptag">${songs[i].title}</div>
+       <div class="musicnametag">${songs[i].artist.name}</div>
        <div class="like">
        <div class="boxsub">
-           <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+          <i class="fa fa-play play-button " aria-hidden="true" ></i>
        </div>
        <div class="time">${songs[i].duration}</div>
        <div class="add">
@@ -234,6 +128,24 @@ searchicon.addEventListener('input', () => {
     }
   }
   // console.log('/')
-   }
-     
-})
+   } 
+});
+
+const music = new Audio();
+const playButtons = document.querySelectorAll('.play-button');
+
+playButtons.forEach((playButton, index) => {
+    playButton.addEventListener('click', () => {
+        if (music.paused) {
+            music.src = `${songs[index].song}`;
+            music.play();
+            playButton.classList.remove("fa-play");
+            playButton.classList.add("fa-pause");
+        } else {
+            music.pause();
+            playButton.classList.remove("fa-pause");
+            playButton.classList.add("fa-play");
+        }
+    });
+});
+
