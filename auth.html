@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authorization</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/auth.css" />
+</head>
+<body>
+    <main>
+        <section class="auth-wrap">
+            <div class="logo-section">
+                <img src="./images/logo.png" alt="logo" />
+                <h1>Music Hub</h1>
+            </div>
+            <div class="tabs">
+                <button class="tab-links tab-links_active" data-tab="signUp-wrap">Sign up</button>
+                <button class="tab-links" data-tab="signIn-wrap">Sign in</button>
+              </div>
+            <div class="signUp-wrap tab-content tab-content_active">
+                <div class="form-signUp">
+                    <div class="input-group">
+                        <label for="uLogin" class="input-title">Enter login</label>
+                        <input required type="text" id="uLogin" name="name" placeholder="roketMan">
+                    </div>
+                    <div class="input-group">
+                        <label for="email" class="input-title">Enter email</label>
+                        <input required type="email" id="email" name="email"
+                            placeholder="mathieu.mm@me.com" 
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" 
+                            title="name@domain.etc">
+                    </div>
+                    <div class="input-group">
+                        <label for="uPassword" class="input-title">Enter passsword</label>
+                        <input required type="password" id="uPassword" name="password"
+                            placeholder="********" 
+                            pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*"
+                            title="Minimum 8 characters, UPPERCASE, lowercase and Number" 
+                            minlength="6">
+                    </div>
+                    <div class="submit-wrap">
+                        <button class="btn signUpBtn">Sign up</button>
+                    </div>
+                </div>
+            </div>
+            <div class="signIn-wrap tab-content">
+                <div class="form-signIn">
+                    <div class="input-group">
+                        <label for="iLogin" class="input-title">Login</label>
+                        <input type="text" id="iLogin" name="name" placeholder="roketMan">
+                    </div>
+                    <div class="input-group">
+                        <label for="iPassword" class="input-title">Passsword</label>
+                        <input type="password" id="password" name="iPassword" placeholder="********">
+                    </div>
+                    <div class="submit-wrap">
+                        <button class="btn signInBtn">Sign in</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./js/auth.js"></script>
+</body>
+</html>
