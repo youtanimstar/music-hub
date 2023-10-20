@@ -2,6 +2,7 @@
 body
 {
     position: relative;
+    
 }
 .nav
 {
@@ -24,7 +25,7 @@ body
     display: flex;
     outline: none;
     border: none;
-    
+
 }
 .searchicon1
 {
@@ -36,6 +37,7 @@ body
     outline: none;
     border: none;
     background-color: white;
+
 
 }
 .searchicon
@@ -61,29 +63,37 @@ body
   'opsz' 48
   
 }
+
+
 .box3,.box0i,.box4i,.box,.box4,.text
 {   width: 100%;
     /* background-color: #fff; */
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 30px;
     align-items: center;
-    margin-top: 10px;
+    /*margin-top: 40px;*/
     color: white;
     /* gap: 50px; */
     /* position: absolute; */
 
 
 }
+
+
 .boxii1,.boxii2
 {
-    width: 75%;
-    height: 150px;
+    width: calc(33% - 20px);
+    height: 250px;
     color: white;
     font-family: YouTube Sans,Roboto,Noto Naskh Arabic UI,Arial,sans-serif;
     font-weight: 700;
     font-size: 20px;
     /* background-color: green; */
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 20px;
@@ -93,36 +103,43 @@ body
 }
 .boxii2
 {
-   
+    align-items: center;
     border-left: none;
     border-right: none;
     border-top: none;
-    border-bottom: 1px solid gray;
+    /*border-bottom: 1px solid gray;*/
 }
 .img
 {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 20px;
     background-color: white;
+    align-items: center;
 }
 .ptag
 {
-    font-size: 15px;
-    width: 100px;
+    font-size: 18px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
 }
 .musicnametag
 {
-    font-size: 12px;
+    font-size: 15px;
     color: rgba(255,255,255,0.6);
     cursor: pointer;
-    width: 100px;
+    display: flex;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
 
 }
 .title2
 {
-    font-size: 15px;
+    font-size: 20px;
     color: rgba(255,255,255,0.6);
     
 }
@@ -135,7 +152,7 @@ body
 }
 .time
 {
-    font-size: 14px;
+    font-size: 15px;
     color: rgba(255,255,255,0.6);
     
 }
@@ -145,7 +162,7 @@ body
 }
 .image
 {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 10px;
 }
