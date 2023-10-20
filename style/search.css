@@ -68,7 +68,7 @@ body
     flex-direction: column;
     align-items: center;
     margin-top: 10px;
-    color: white;
+    color: rgb(255, 255, 255);
     /* gap: 50px; */
     /* position: absolute; */
 
@@ -105,25 +105,38 @@ body
     height: 150px;
     border-radius: 20px;
     background-color: white;
+    transition: transform .2s;
+}
+.img:hover
+{
+    transform: scale(1.2);
 }
 .ptag
 {
     font-size: 15px;
     width: 100px;
-    
+    color: #ffffff;
+}
+.ptag:hover
+{
+    color: #11f800;
 }
 .musicnametag
 {
-    font-size: 12px;
-    color: rgba(255,255,255,0.6);
+    font-size: 15px;
+    color: rgb(251, 251, 251);
     cursor: pointer;
     width: 100px;
 
 }
+.musicnametag:hover
+{
+    color: rgb(0, 204, 255);
+}
 .title2
 {
     font-size: 15px;
-    color: rgba(255,255,255,0.6);
+    color: rgb(255, 255, 255);
     
 }
 .like
@@ -136,8 +149,11 @@ body
 .time
 {
     font-size: 14px;
-    color: rgba(255,255,255,0.6);
-    
+    color: rgb(255, 255, 255)
+}
+.time:hover
+{
+    color: #fdec00;
 }
 .add
 {
@@ -146,6 +162,6 @@ body
 .image
 {
     width: 150px;
-    height: 150px;
+    height: 140px;
     border-radius: 10px;
 }
