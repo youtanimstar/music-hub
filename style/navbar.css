@@ -126,6 +126,113 @@
   border: 2px solid var(--white);
 }
 
+.user-section{
+  display: none;
+}
+
+
+/* Add this CSS to your existing stylesheet or create a new one */
+
+/* Styling for the hamburger container */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 20px; 
+}
+
+#mobile-menu{
+  display: none;
+}
+
+/* Style the hamburger icon itself */
+.hamburger label {
+  font-size: 24px;
+  user-select: none; /* Prevent text selection */
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  color: white;
+}
+
+#hamb{
+  display: none;
+}
+
+
+#mobile-menu {
+  display: none; /* Start hidden */
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
+  width: 80%; /* Adjust the width as needed */
+  height: 100vh;
+  transition: transform 0.3s ease-in-out;
+  color: white;
+  font-size: 50px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-left: 5px;
+}
+
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+.user{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.user a{
+  background-color: aliceblue;
+  margin-bottom: 20px;
+  border-radius: 100px;
+}
+
+.user a:hover{
+  background-color: gray;
+}
+
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none;
+  }
+
+  .navbar .user-section{
+    display: none;
+  }
+
+  .hamburger{
+    display: flex;
+  }
+
+  #hamb{
+    display: block;
+  }
+
+  #mobile-menu{
+    display: none;
+  }
+  
+
+}
+
+
+
+
+
+
+
+
 /*  menu wrap  */
 .menu-wrap {
   display: flex;
@@ -194,3 +301,4 @@
     margin-top: 20px;
   }
 }
+

@@ -121,6 +121,23 @@
     width: 100%;
 }
 
+@media (max-width: 768px) {
+    /* Adjust the .home_section */
+
+    body{
+        overflow-x: hidden;
+    }    
+
+   .latest-songs-button-section, .btn_s {
+        margin-right: 700px;
+   }
+   
+   
+    
+ 
+  }
+  
+
 
 
 
