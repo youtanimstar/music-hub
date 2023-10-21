@@ -304,6 +304,9 @@
 .home_section .songs .song-card-section .song-card:hover{
     background-color: var(--gray-white);
 }
+.playing{
+    color: #ee1f69 !important;
+}
 .home_section .songs .song-card-section .song-card .left{
     width: 150px;
     height: 100%;

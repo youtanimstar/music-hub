@@ -17,7 +17,7 @@ data.forEach((item, index) => {
   songCardHtml.setAttribute("id", `${item.title}`);
   const htmlData = `<img src="${item.image}" class="left" alt="${item.title}" />
         <div class="right">
-          <div class="title">${item.title}</div>
+          <div class="title"id="${item.title}text">${item.title}</div>
           <div class="description">
             ${item.artist.name}
           </div>`;
@@ -126,13 +126,20 @@ const playerImage = document.querySelector("#player-image");
 
 
 let songIndex;
+let currentSongName = null;
 songCard.forEach((item, index) => {
   item.addEventListener("click", () => {
+    if (currentSongName) {
+      document.getElementById(currentSongName).classList.remove("playing");
+    }
     songIndex = index;
     playerTitle.innerHTML = data[index].title;
     artistName.innerHTML = data[index].artist.name;
     playerImage.src = data[index].image;
     player.classList.add("active");
+    let songName = document.getElementById(`${data[index].title}text`);
+    songName.classList.add("playing");
+    currentSongName = `${data[index].title}text`
     music.src = `${data[index].song}`;
     music.play();
     masterPlay.classList.remove("bi-play-fill");
