@@ -6,7 +6,7 @@ body
 .nav
 {
     width: 100%;
-    height: 56px;
+    height: 70px;
     /* background-color: rgb(29, 28, 28); */
     display: flex;
     align-items: center;
@@ -20,11 +20,11 @@ body
     width: 30%;
     height: 80%;
     background-color: white;
-    border-radius: 50px;
+    border-radius:50px;
     display: flex;
     outline: none;
-    border: none;
-    
+    border: 2px solid #FE6244;
+    box-shadow: 0 0 5px #FE6244;
 }
 .searchicon1
 {
@@ -32,19 +32,20 @@ body
     height: 100%;
     border-radius: 50px 0px 0px 50px;
     /* background-color: rgb(128, 28, 0); */
-    padding-left: 2%;
+    padding-left: 4%;
     outline: none;
     border: none;
     background-color: white;
-
+    font-size: 1.2rem;
+   
 }
 .searchicon
 {
     width: 18%;
     height: 100%;
     border-radius: 0px 50px 50px 0px;
-    background-color: white;
-    border-left: 1px solid black;
+    background-color: #FE6244;
+    border-left: 2px solid #FE6244;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,7 +59,7 @@ body
   'FILL' 0,
   'wght' 400,
   'GRAD' 0,
-  'opsz' 48
+  'opsz' 48;
   
 }
 .box3,.box0i,.box4i,.box,.box4,.text
@@ -67,7 +68,8 @@ body
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 20px;
+    
     color: white;
     /* gap: 50px; */
     /* position: absolute; */
@@ -105,6 +107,7 @@ body
     height: 150px;
     border-radius: 20px;
     background-color: white;
+    margin-bottom: 30px;
 }
 .ptag
 {
@@ -147,5 +150,5 @@ body
 {
     width: 150px;
     height: 150px;
-    border-radius: 10px;
+    border-radius: 12px;
 }
