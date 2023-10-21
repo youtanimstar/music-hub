@@ -14,7 +14,7 @@ body
     align-items: center;
     justify-content: center;
     position: fixed;
-    top: 80px;
+    top: 80vh;
     left: 0%;
 }
 .search
