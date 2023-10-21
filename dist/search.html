@@ -1,32 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
-    <title>Music Hub</title>
-    <link rel="stylesheet" href="../style/style.css" />
-    <link rel="stylesheet" href="../style/navbar.css" />
-    <link rel="stylesheet" href="../style/search.css" />
-    <link rel="stylesheet" href="../style/footer.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
+      <title>Music Hub</title>
+      <link rel="stylesheet" href="../style/style.css" />
+      <link rel="stylesheet" href="../style/navbar.css" />
+      <link rel="stylesheet" href="../style/search.css" />
+      <link rel="stylesheet" href="../style/footer.css" />
+      <link rel="stylesheet" href="../style/login-signup.css"  />
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+      />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      />
   </head>
   <body>
     <!-- Navigation Section -->
     <nav class="navbar">
       <a href="../index.html">
         <div class="logo-seciton">
-          <img src="../images/logo.png" alt="logo" />
+          <a href="/" ><img src="../images/logo.png" alt="logo" /></a>
           <h1>Music Hub</h1>
         </div>
       </a>
@@ -59,7 +60,8 @@
       <div class="user-section">
         <ul>
           <li>
-            <a href="#" id="myBtn">Register</a>
+            <a href="./register.html" id="myBtn">Register</a>
+            <a href="./login.html" id="myBtn">Login</a>
           </li>
         </ul>
         <div class="profile"></div>
@@ -68,10 +70,10 @@
 
     <div class="nav">
       <div class="search">
-        <input class="searchicon1" placeholder="Search your song" id="search" />
         <label class="searchicon" for="search"
-          ><span class="material-symbols-outlined"> search </span></label
-        >
+          ><span class="material-symbols-outlined"> search </span></label>
+        <input class="searchicon1" placeholder="Search your song..." id="search" />
+        
       </div>
     </div>
 
@@ -79,6 +81,8 @@
       <div class="box4"></div>
       <div class="box0i"></div>
     </div>
+      
+    
     <!-- Footer Section -->
 
     <footer>
