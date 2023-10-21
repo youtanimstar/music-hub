@@ -14,8 +14,13 @@ body
     align-items: center;
     justify-content: center;
     position: fixed;
+    z-index: 99;
     top: 80px;
     left: 0%;
+}
+
+.nav:hover {
+        background-color: rgba(29, 28, 28, .8);
 }
 .search
 {
