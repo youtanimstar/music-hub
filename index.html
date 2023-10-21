@@ -135,34 +135,71 @@
           <span id="currentEnd">0:00</span>
         </div>
       </div>
-      <!-- login signup section -->
-      <div id="myModal" class="modal">
-        <form>
-          <!-- Modal content -->
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <input
-              type="text"
-              id="name"
-              placeholder="Enter Your Github Username"
-            />
-            <br />
+  <!-- login signup section -->
+<div id="myModal" class="modal">
+  <form>
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close" id="closeBtn">&times;</span>
 
-            <input type="text" id="email" placeholder="Email" />
-            <br />
+      <input type="text" id="email" placeholder="Email" />
+      <br />
 
-            <input type="password" id="password" placeholder="Password" />
-            <br />
+      <input type="password" id="password" placeholder="Password" />
+      <br />
 
-            <!--the remember me button-->
-            <!--the sign in button-->
-            <div class="form-element">
-              <button>Submit</button>
-            </div>
-            <!--forget password-->
-          </div>
-        </form>
+
+      <!-- Sign In Button -->
+      <div class="form-element">
+        <button>Sign in</button>
       </div>
+          <p class="p">Don't have an account? Create one!</p>
+      <!-- Create Account Button -->
+      <div class="form-element">
+        <button id="createAccountBtn">Create Account</button>
+      </div>
+
+      <!-- Forgot Password Link -->
+      <div class="form-element">
+        <a href="#" id="forgotPasswordLink">Forgot Password ?</a>
+      </div>
+    </div>
+  </form>
+</div>
+
+<!-- Sign-up section -->
+<div id="signupModal" class="modal" style="display: none;">
+  <form>
+    <!-- Modal content for sign-up -->
+      <!-- Remember Me Checkbox -->
+      <label for="rememberMe" class="white-checkbox">
+        <input type="checkbox" id="rememberMe" name="rememberMe" />
+        Remember Me
+      </label>
+
+      <br />
+    <div class="modal-content">
+      <span class="close" id="signupCloseBtn">&times;</span>
+      <input type="text" id="name" placeholder="Github Username" />
+      <br />
+
+      <input type="text" id="email" placeholder="Email" />
+      <br />
+
+      <input type="password" id="password" placeholder="Password" />
+      <br />
+      <!-- Sign-up form elements (e.g., username, email, password) go here ... -->
+      <div class="form-element">
+        <button>Sign up</button>
+      </div>
+      <!-- Back to Login Button -->
+      <div class="form-element">
+        <button id="backToLoginBtn"> Back to Login</button>
+      </div>
+    </div>
+  </form>
+</div>
+
 
       <footer>
         <div>
