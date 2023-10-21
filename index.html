@@ -42,49 +42,41 @@
           <img src="./images/logo.png" alt="logo" />
           <h1>Music Hub</h1>
         </div>
-        <button class="navbar-toggler" type="button">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"></path></svg>
-        </button>
-        <div class="menu-wrap">
-          <div class="navbar-collapse">
-            <ul class="menu-list">
-              <li>
-                <a href="">
-                  <span class="icon"
-                    ><i class="fa-solid fa-house-chimney"></i
-                  ></span>
-                  <span class="title">Home</span>
-                </a>
-              </li>
-              <li>
-                <a href="./dist/search.html">
-                  <span class="icon"><i class="fa-solid fa-compass"></i></span>
-                  <span class="title">Search</span>
-                </a>
-              </li>
-              <li>
-                <a href="./dist/library.html">
-                  <span class="icon"><i class="fa-solid fa-folder"></i></span>
-                  <span class="title">Library</span>
-                </a>
-              </li>
-              <li>
-                <a href="./dist/aboutus.html">
-                  <span class="icon"><i class="fa-solid fa-folder"></i></span>
-                  <span class="title">About Us</span>
-                </a>
-              </li>
-            </ul>
-            <div class="user-section">
-              <ul>
-                <li>
-                  <a href="./register.html" id="myBtn">Register</a>
-                  <a href="./login.html" id="myBtn">Login</a>
-                </li>
-              </ul>
-              <div class="profile"></div>
-            </div>
-          </div>
+        <ul>
+          <li>
+            <a href="">
+              <span class="icon"
+                ><i class="fa-solid fa-house-chimney"></i
+              ></span>
+              <span class="title">Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="./dist/search.html">
+              <span class="icon"><i class="fa-solid fa-compass"></i></span>
+              <span class="title">Search</span>
+            </a>
+          </li>
+          <li>
+            <a href="./dist/library.html">
+              <span class="icon"><i class="fa-solid fa-folder"></i></span>
+              <span class="title">Library</span>
+            </a>
+          </li>
+          <li>
+            <a href="./dist/aboutus.html">
+              <span class="icon"><i class="fa-solid fa-folder"></i></span>
+              <span class="title">About Us</span>
+            </a>
+          </li>
+        </ul>
+        <div class="user-section">
+          <ul>
+            <li>
+              <a href="#" id="myBtn">Register</a>
+            </li>
+          </ul>
+          <div class="profile"></div>
         </div>
       </nav>
       <!-- home section -->
@@ -123,25 +115,16 @@
       <!-- player section -->
       <div class="player">
         <div class="player-section">
-          
-          <div class="player-info-container">
-            <div class="left-column">
-              <img class="playerBGImage" id="player-image" src="your-image-source.jpg" alt="Player Image" />
-            </div>
-            <div class="right-column">
-              <h4 class="title" id="player-title">Lorem, ipsum dolor</h4>
-              <h6 class="artist-name" id="artist-name">Lorem, ipsum dolor</h6>
-            </div>
+          <div class="wave">
+            <div class="wave1"></div>
+            <div class="wave1"></div>
+            <div class="wave1"></div>
           </div>
-
-          
+          <h1 class="title" id="player-title">Lorem, ipsum dolor</h1>
           <div class="icon">
             <i class="bi bi-skip-start-fill" id="back"></i>
-            <i class="bi bi-play-fill" id="masterPlay" class="play-button"></i>
+            <i class="bi bi-play-fill" id="masterPlay"></i>
             <i class="bi bi-skip-end-fill" id="next"></i>
-          </div>
-          <div>
-            
           </div>
           <span id="currentStart">0:00</span>
           <div class="bar">
@@ -150,15 +133,73 @@
             <div class="dot"></div>
           </div>
           <span id="currentEnd">0:00</span>
-
-          <div class="wave">
-            <div class="wave1"></div>
-            <div class="wave1"></div>
-            <div class="wave1"></div>
-          </div>
         </div>
       </div>
-      
+  <!-- login signup section -->
+<div id="myModal" class="modal">
+  <form>
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close" id="closeBtn">&times;</span>
+
+      <input type="text" id="email" placeholder="Email" />
+      <br />
+
+      <input type="password" id="password" placeholder="Password" />
+      <br />
+
+
+      <!-- Sign In Button -->
+      <div class="form-element">
+        <button>Sign in</button>
+      </div>
+          <p class="p">Don't have an account? Create one!</p>
+      <!-- Create Account Button -->
+      <div class="form-element">
+        <button id="createAccountBtn">Create Account</button>
+      </div>
+
+      <!-- Forgot Password Link -->
+      <div class="form-element">
+        <a href="#" id="forgotPasswordLink">Forgot Password ?</a>
+      </div>
+    </div>
+  </form>
+</div>
+
+<!-- Sign-up section -->
+<div id="signupModal" class="modal" style="display: none;">
+  <form>
+    <!-- Modal content for sign-up -->
+      <!-- Remember Me Checkbox -->
+      <label for="rememberMe" class="white-checkbox">
+        <input type="checkbox" id="rememberMe" name="rememberMe" />
+        Remember Me
+      </label>
+
+      <br />
+    <div class="modal-content">
+      <span class="close" id="signupCloseBtn">&times;</span>
+      <input type="text" id="name" placeholder="Github Username" />
+      <br />
+
+      <input type="text" id="email" placeholder="Email" />
+      <br />
+
+      <input type="password" id="password" placeholder="Password" />
+      <br />
+      <!-- Sign-up form elements (e.g., username, email, password) go here ... -->
+      <div class="form-element">
+        <button>Sign up</button>
+      </div>
+      <!-- Back to Login Button -->
+      <div class="form-element">
+        <button id="backToLoginBtn"> Back to Login</button>
+      </div>
+    </div>
+  </form>
+</div>
+
 
       <footer>
         <div>
@@ -190,13 +231,12 @@
           </div>
         </div>
         <div class="footer-container">
-          <p class="copyright"> CopyRights © <script>document.write(new Date().getFullYear()) ;</script>. All Rights Reserved by <strong style="cursor: pointer;" id="copyClick">Music-Hub</strong></p>
+          <p class="copyright"> CopyRights © <script>document.write(new Date().getFullYear()) ;</script>. All Rights Reserved</p>
         </div>
       </footer>
     </main>
 
     <!-- scripts -->
-    <script src="./js/menu.js" type="module"></script>
     <script src="./js/profileartists.js" type="module"></script>
     <script src="./js/latestsongs.js" type="module"></script>
     <script src="./js/data.js" type="module"></script>
