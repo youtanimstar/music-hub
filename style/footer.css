@@ -115,12 +115,38 @@ footer > div:nth-child(2) p {
   }
 }
 
-@media(max-width: 460px) {
-  footer {
-    padding: 30px 50px 0px 50px;
-  } 
+/* Add this media query to center content when the device width is less than 500px */
+@media (max-width: 500px) {
+  footer > div:first-child {
+    flex-direction: column; /* Stack content under each other */
+    align-items: center; /* Center content horizontally */
+    text-align: center;
+  }
+
+  .footer-logo {
+    justify-content: center;
+  }
+
+  .footer-logo img {
+    width: 80px;
+  }
+
+  .footer-logo p,
+  .quick-links h3,
+  .social-links h3 {
+    font-size: 1rem;
+  }
+
+  .social-links {
+    text-align: center;
+    margin-right: 0;
+  }
 
   footer > div:first-child {
-    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  footer > div:nth-child(2) p {
+    font-size: 0.9rem;
   }
 }
