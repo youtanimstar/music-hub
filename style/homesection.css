@@ -11,6 +11,11 @@
 }
 
 /* ====================== Latest Songs ====================== */
+.fa-less-than:hover {
+    background-color: red;
+    color: black; /* Change the color on hover as per your requirement */
+    transform: scale(1.1);
+}
 
 .home_section .latest-songs{
     width: 100%;
