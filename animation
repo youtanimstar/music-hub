@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
+  <title>Music Hub</title>
+  <!-- ================ cdn js ================ -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- ================ bootstrap icons ================ -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
+  <!-- ================ style section ================ -->
+  <!-- main style css -->
+  <link rel="stylesheet" href="./style/style.css" />
+  <!-- navbar css -->
+  <link rel="stylesheet" href="./style/navbar.css" />
+  <!-- home section -->
+  <link rel="stylesheet" href="./style/homesection.css" />
+  <!-- song section -->
+  <link rel="stylesheet" href="./style/song.css" />
+  <!-- player section -->
+  <link rel="stylesheet" href="./style/player.css" />
+  <!-- login signup sectin -->
+  <link rel="stylesheet" href="./style/login-signup.css" />
+  <!-- footer css -->
+  <link rel="stylesheet" href="./style/footer.css" />
+  <!-- animation cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+  <main>
+    <!-- Navigation Section -->
+    <nav class="navbar animate__animated animate__fadeInDown">
+      <div class="logo-seciton">
+        <img src="./images/logo.png" alt="logo" />
+        <h1>Music Hub</h1>
+      </div>
+      <button class="navbar-toggler" type="button">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" focusable="false">
+          <title>Menu</title>
+          <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10"
+            d="M4 7h22M4 15h22M4 23h22"></path>
+        </svg>
+      </button>
+      <div class="menu-wrap">
+        <div class="navbar-collapse">
+          <ul class="menu-list">
+            <li>
+              <a href="">
+                <span class="icon"><i class="fa-solid fa-house-chimney"></i></span>
+                <span class="title">Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="./dist/search.html">
+                <span class="icon"><i class="fa-solid fa-compass"></i></span>
+                <span class="title">Search</span>
+              </a>
+            </li>
+            <li>
+              <a href="./dist/library.html">
+                <span class="icon"><i class="fa-solid fa-folder"></i></span>
+                <span class="title">Library</span>
+              </a>
+            </li>
+            <li>
+              <a href="./dist/aboutus.html">
+                <span class="icon"><i class="fa-solid fa-folder"></i></span>
+                <span class="title">About Us</span>
+              </a>
+            </li>
+          </ul>
+          <div class="user-section">
+            <ul>
+              <li>
+                <a href="./register.html" id="myBtn">Register</a>
+                <a href="./login.html" id="myBtn">Login</a>
+              </li>
+            </ul>
+            <div class="profile"></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- home section -->
+    <div class="home_section ">
+      <div class="latest-songs animate__animated animate__fadeInDown">
+        <div class="top">
+          <h1>Latest Song</h1>
+          <div class="latest-songs-button-section">
+            <i id="latest-songs-right-scrolls" class="fa-solid fa-less-than"></i>
+            <i id="latest-songs-left-scrolls" class="fa-solid fa-greater-than"></i>
+          </div>
+        </div>
+        <div class="latest-songs-item snaps-inline"></div>
+      </div>
+      <div class="profile-artists animate__animated animate__fadeInRight">
+        <div class="top">
+          <h1>Popular Artists</h1>
+          <div class="btn_s">
+            <i id="right-scrolls" class="fa-solid fa-less-than"></i>
+            <i id="left-scrolls" class="fa-solid fa-greater-than"></i>
+          </div>
+        </div>
+        <div class="item snaps-inline" id="popularArtist"></div>
+      </div>
+      <div class="songs animate__animated animate__fadeInDown">
+        <h1 class="title">Quick picks</h1>
+        <div class="song-card-section"></div>
+      </div>
+    </div>
+    <!-- player section -->
+    <div class="player animate__animated animate__fadeInRight">
+      <div class="player-section">
+
+        <div class="player-info-container">
+          <div class="left-column">
+            <img class="playerBGImage" id="player-image" src="your-image-source.jpg" alt="Player Image" />
+          </div>
+          <div class="right-column">
+            <h4 class="title" id="player-title">Lorem, ipsum dolor</h4>
+            <h6 class="artist-name" id="artist-name">Lorem, ipsum dolor</h6>
+          </div>
+        </div>
+
+
+        <div class="icon">
+          <i class="bi bi-skip-start-fill" id="back"></i>
+          <i class="bi bi-play-fill" id="masterPlay" class="play-button"></i>
+          <i class="bi bi-skip-end-fill" id="next"></i>
+        </div>
+        <div>
+
+        </div>
+        <span id="currentStart">0:00</span>
+        <div class="bar">
+          <input type="range" id="seek" min="0" value="0" max="100" />
+          <div class="bar2" id="bar2"></div>
+          <div class="dot"></div>
+        </div>
+        <span id="currentEnd">0:00</span>
+
+        <div class="wave">
+          <div class="wave1"></div>
+          <div class="wave1"></div>
+          <div class="wave1"></div>
+        </div>
+      </div>
+    </div>
+
+
+    <footer class="animate__animated animate__fadeInUp">
+      <div>
+        <div class="footer-logo animate__animated animate__fadeInDown">
+          <img src="./images/logo.png" alt="Music Hub" />
+          <p>Music Hub</p>
+        </div>
+        <div class="quick-links">
+          <h3>Quick Links</h3>
+          <a href="#home_section">Home</a>
+          <a href="dist/library.html">Library</a>
+          <a href="dist/aboutus.html">About Us</a>
+        </div>
+        <div class="quick-links">
+          <h3>Quick Links</h3>
+          <a href="dist/search.html">Search</a>
+          <a href="dist/playlist.html">Playlist</a>
+        </div>
+        <div class="quick-links">
+          <h3>Quick Links</h3>
+          <a href="dist/player.html">Player</a>
+          <a href="#">Register</a>
+        </div>
+        <div class="social-links">
+          <h3>Social Links</h3>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+      </div>
+      <div class="footer-container">
+        <p class="copyright"> CopyRights ©
+          <script>document.write(new Date().getFullYear());</script>. All Rights Reserved by <strong
+            style="cursor: pointer;" id="copyClick">Music-Hub</strong>
+        </p>
+      </div>
+    </footer>
+  </main>
+
+  <!-- scripts -->
+  <script src="./js/menu.js" type="module"></script>
+  <script src="./js/profileartists.js" type="module"></script>
+  <script src="./js/latestsongs.js" type="module"></script>
+  <script src="./js/data.js" type="module"></script>
+  <script src="./js/player.js" type="module"></script>
+  <script src="./js/login-signup.js" type="module"></script>
+</body>
+
+</html>
