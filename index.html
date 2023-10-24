@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="./style/song.css" />
     <!-- player section -->
     <link rel="stylesheet" href="./style/player.css" />
-    <!-- login signup sectin -->
+    <!-- login signup section -->
     <link rel="stylesheet" href="./style/login-signup.css" />
     <!-- footer css -->
     <link rel="stylesheet" href="./style/footer.css" />
@@ -193,6 +193,7 @@
           <p class="copyright"> CopyRights © <script>document.write(new Date().getFullYear()) ;</script>. All Rights Reserved by <strong style="cursor: pointer;" id="copyClick">Music-Hub</strong></p>
         </div>
       </footer>
+      <button onclick="topFunction()" id="myBtnarrow" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
     </main>
 
     <!-- scripts -->
@@ -200,6 +201,28 @@
     <script src="./js/profileartists.js" type="module"></script>
     <script src="./js/latestsongs.js" type="module"></script>
     <script src="./js/data.js" type="module"></script>
+    <script>
+      // Get the button:
+  let mybutton = document.getElementById("myBtnarrow");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+  </script>
+  <script src="https://kit.fontawesome.com/6d2bf5cc34.js" crossorigin="anonymous"></script> 
     <script src="./js/player.js" type="module"></script>
     <script src="./js/login-signup.js" type="module"></script>
   </body>
