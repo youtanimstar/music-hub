@@ -118,7 +118,30 @@
         <p>CopyRights &copy; 2023. All Rights Reserved</p>
       </div>
     </footer>
+    <button onclick="topFunction()" id="myBtnarrow" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
   </body>
   <!-- <script src="./main2.js"></script> -->
   <script src="../js/search.js"></script>
+  <script>
+    // Get the button:
+let mybutton = document.getElementById("myBtnarrow");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
 </html>
