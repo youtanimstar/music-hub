@@ -5,8 +5,12 @@
 
 import { data } from "../data/data.js";
 const index = localStorage.getItem("cardId");
-
-console.log(index);
+let currIndex;
+let queue = [];
+if (localStorage.getItem("playQueue") === "true") {
+  queue = JSON.parse(localStorage.getItem("currentQueue")).cardInfo;
+  currIndex = queue.length - 1;
+}
 
 const music = new Audio();
 const background = document.querySelector(".background");
@@ -69,6 +73,7 @@ music.addEventListener("timeupdate", () => {
 
   let min = Math.floor(music_dur / 60);
   let sec = Math.floor(music_dur % 60);
+  if (!sec || !min) sec = min = 0;
   if (sec < 10) {
     sec = `0${sec}`;
   }
@@ -95,4 +100,20 @@ music.addEventListener("ended", () => {
   condition = true;
   range.value = 0;
   currentStart.innerText = `0:00`;
+  currentEnd.innerText = `0:00`;
+
+  if (queue.length !== 0 && currIndex > 0) { //play next song
+    currIndex--;
+    localStorage.setItem("cardId", queue[currIndex].id2);
+    music.src = `${data[queue[currIndex].id2].song}`;
+    background.setAttribute("src", data[queue[currIndex].id2].poster);
+    image.setAttribute("src", data[queue[currIndex].id2].image);
+    title.innerHTML = data[queue[currIndex].id2].title;
+    artistName.innerHTML = data[queue[currIndex].id2].artist.name;
+    music.play();
+    play.click();
+  } else {
+    localStorage.removeItem("currentQueue");
+    localStorage.removeItem("playQueue");
+  }
 });
