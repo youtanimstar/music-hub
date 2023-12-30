@@ -15,7 +15,7 @@
 4. [Contributors](#contributors)
 5. [Happy Hacking!](#happy-hacking)
 
-## Introduction to Hacktoberfest
+## Introduction to Hacktoberfest 2023
 
 Hacktoberfest is a month-long celebration of open source software. It's an opportunity for developers, designers, and enthusiasts to contribute to open source projects and make a positive impact on the global tech community.
 
